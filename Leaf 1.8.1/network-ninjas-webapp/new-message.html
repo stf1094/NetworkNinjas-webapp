@@ -75,7 +75,7 @@
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item dropdown hidden-md-down">
+           <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-plus-square-o"></i>
                 </a>
@@ -469,581 +469,179 @@
                 <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item"><a href="#">Admin</a>
                 </li>
-                <li class="breadcrumb-item active">Create a Project</li>
+                <li class="breadcrumb-item active">New Message</li>
             </ol>
 
 
             <div class="container-fluid">
                 <div class="animated fadeIn">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Create a Project</strong>
-                                </div>
-                                <div class="card-block">
-                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                        <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Project Name</label>
-                                            <div class="col-md-9">
-                                                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Project Name">
-                                                <span class="help-block">Ex: Achieve Your Next Rank</span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Set a Goal</label>
-                                            <div class="col-md-9">
-                                                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Your Goal">
-                                                    <span class="help-block">Ex: Get 15 Customers or Recruit 10 Associates</span>
-                                            </div>
-                                        </div>
-                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">How Many Contacts?</label>
-                                            <div class="col-md-9">
-                                                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Enter a number">
-                                                    <span class="help-block">How many people do you need to contact to reach this goal?</span>
-                                            </div>
-                                        </div>
-                                        <!--
-                                        <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Start Date</label>
-                                                <div class="cold-md-9 pl-1">
-                                                    <fieldset class="form-group">
-                                                        <label>DateRangePicker</label>
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                                            </span>
-                                                            <input name="daterange" class="form-control" type="text">
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
-                                            </div>-->
+                        <div class="col-12">
+                            <div class="card email-app">
+                                <nav>
+                                    <a href="page-inbox-compose.html" class="btn btn-warning btn-block">New Message</a>
 
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-inbox"></i> Inbox <span class="badge badge-danger">4</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-star"></i> Stared</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-rocket"></i> Sent</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-trash-o"></i> Trash</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-bookmark"></i> Important<span class="badge badge-info">5</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-inbox"></i> Inbox <span class="badge badge-danger">4</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <main>
+
+                                    <div class="message clearfix">
+
+                                        <p class="text-center">New Message</p>
+
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="to" class="col-sm-1 form-control-label">To:</label>
+                                                <div class="col-sm-11">
+                                                    <input type="email" class="form-control" id="to" placeholder="Type name">
+                                                </div>
+                                            </div>
 
                                             <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Choose a deadline</label>
-                                                <div class="cold-md-9 pl-1">
-                                                    <fieldset class="form-group">
-                                                        
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                                            </span>
-                                                            <input name="daterange" class="form-control" type="text">
-                                                        </div>
-                                                        <label>What is your deadline for this project?</label>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
-                            
-                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Add Your Contacts</label>
-                                            <div class="col-md-9">
-                                                <div class="card">
-                        <div class="card-header">
-                            <i class="fa fa-edit"></i> Your Contacts
-                            <label class="pr-3" style="float: right">Selected 1/100 Contacts</label>
-                            <div class="card-actions">
-                                <a href="http://l-lin.github.io/angular-datatables/#/gettingStarted">
-                                    <small class="text-muted">docs</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="ml-1 my-1">
-                                <p>Select All<p>
-                                  <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                </label>
-                            </div>
-                        </div>
-                                                
-                                                <div class="card-block">
-                    
-                            <table class="table table-striped table-bordered datatable">
-                                <thead>
-                                    <tr>
-                                        <th>Select</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Phone Number</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Anton Phunihel</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Alphonse Ivo</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Thancmar Theophanes</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Walerian Khwaja</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Clemens Janko</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Chidubem Gottlob</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Hristofor Sergio</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Tadhg Griogair</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Pollux Beaumont</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Adam Alister</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Carlito Roffe</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Sana Amrin</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Adinah Ralph</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Dederick Mihail</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Hipólito András</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Fricis Arieh</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Scottie Maximilian</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Bao Gaspar</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Tullio Luka</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Felice Arseniy</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Finlay Alf</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Theophilus Nala</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Sullivan Robert</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Kristóf Filiberto</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Kuzma Edvard</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Bünyamin Kasper</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Crofton Arran</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Bernhard Shelah</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Grahame Miodrag</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Innokentiy Celio</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                       
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Kostandin Warinhari</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                         <td> 
-                                            <label class="switch switch-icon switch-pill switch-primary">
-                                                <input type="checkbox" class="switch-input" checked="">
-                                                <span class="switch-label" data-on="" data-off=""></span>
-                                                <span class="switch-handle"></span>
-                                            </label>
-                                        </td>
-                                        <td>Ajith Hristijan</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
-                                        
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                                                     <div class="card-footer">
-                                                  <div class="form-actions">
-                                                    <button type="submit" class="btn btn-success">Save changes</button>
-                                                    <button type="button" class="btn btn-default">Restart</button>
-                                                </div>
-                                             </div>
+                                                <label for="cc" class="col-sm-1 form-control-label">CC:</label>
+                                                <div class="col-sm-11">
+                                                    <input type="email" class="form-control" id="cc" placeholder="Type name">
                                                 </div>
                                             </div>
 
-                                        </div>
+                                            <div class="form-group row">
+                                                <label for="bcc" class="col-sm-1 form-control-label">Send As:</label>
+                                                <div class="col-sm-11">
+                                                    <label class="radio-inline" for="inline-radio1">
+                                                    <input type="radio" id="inline-radio1" name="inline-radios" value="option1">Text Message
+                                                </label>
+                                                <label class="radio-inline" for="inline-radio2">
+                                                    <input type="radio" id="inline-radio2" name="inline-radios" value="option2">Email
+                                                </label>
+                                                </div>
+                                            </div>
+                                       
 
-          
-                                        
-                                     
-                                    </form>
-                               
+                                        </form>
+
+                                        <div class="row">
+                                            <div class="col-sm-11 offset-sm-1">
+
+                                                <div class="btn-toolbar" role="toolbar">
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-bold"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-italic"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-underline"></span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-align-left"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-align-right"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-align-center"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-align-justify"></span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-indent"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-outdent"></span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-list-ul"></span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary">
+                                                            <span class="fa fa-list-ol"></span>
+                                                        </button>
+                                                    </div>
+
+                                                    <button type="button" class="btn btn-secondary">
+                                                        <span class="fa fa-trash-o"></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        <span class="fa fa-paperclip"></span>
+                                                    </button>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="fa fa-tags"></span>
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">add label <span class="badge badge-danger"> Home</span></a>
+                                                            </li>
+                                                            <li><a href="#">add label <span class="badge badge-info">Job</span></a>
+                                                            </li>
+                                                            <li><a href="#">add label <span class="badge badge-success">Clients</span></a>
+                                                            </li>
+                                                            <li><a href="#">add label <span class="badge badge-warning">News</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <br>
+
+                                                <div class="form-group">
+
+                                                    <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to start message"></textarea>
+
+                                                </div>
+
+                                                <div class="form-group">
+
+                                                    <button type="submit" class="btn btn-success">Send</button>
+                                                    <button type="submit" class="btn btn-secondary">Draft</button>
+                                                    <button type="submit" class="btn btn-danger">Discard</button>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
                             </div>
                         </div>
-                            <!--2nd Card-->
-                            <div class="card card-accent-primary">
-                                 <div class="card-header">
-                                    <strong>Project Confirmation</strong>
-                                 </div>
-                                <div class="card-block">
-                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                        <div id="new-start-date" class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Set New Start Date</label>
-                                             <div class="cold-md-9 pl-1">
-                                                    <fieldset class="form-group">
-                                                        
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                                            </span>
-                                                            <input name="daterange" class="form-control" type="text">
-                                                        </div>
-                                                        <label>What is your new start date for this project?</label>
-                                                    </fieldset>
-                                                </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                  <div class="card-footer">
-                                                  <div class="form-actions">
-                                                    <button type="submit" class="btn btn-primary">Complete Project</button>
-                                                    <button type="button" class="btn btn-default">Go Back</button>
-                                                </div>
-                                             </div>
-                                </div>
-                        
                     </div>
                 </div>
+
+            </div>
             <!-- /.conainer-fluid -->
-            </div>
-            </div>
         </main>
 
         <aside class="aside-menu">
@@ -1357,13 +955,7 @@
 
     <script src="js/app.js"></script>
 
-   <!-- Plugins and scripts required by this views -->
-    <script src="js/libs/jquery.dataTables.min.js"></script>
-    <script src="js/libs/dataTables.bootstrap4.min.js"></script>
 
-
-    <!-- Custom scripts required by this view -->
-    <script src="js/views/tables.js"></script>
 
 </body>
 

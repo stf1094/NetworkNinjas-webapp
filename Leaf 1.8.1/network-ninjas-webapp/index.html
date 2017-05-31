@@ -77,7 +77,7 @@
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-comments"></i>
+                    <i class="fa fa-plus-square-o"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
 
@@ -85,7 +85,7 @@
                         <strong>Quick Actions</strong>
                     </div>
 
-                    <a href="UIkits-email-compose.html" class="dropdown-item">
+                    <a href="new-message.html" class="dropdown-item">
                         <i class="icon-note text-success"></i> Create new message
                     </a>
                     <a href="#theModal" data-toggle="modal" class="dropdown-item">
@@ -349,7 +349,7 @@
             </li>
 
         </ul>
-                 <div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                 <div class="modal fade" style="z-index: 3000" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -401,7 +401,7 @@
                        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="widgets.html"><i class="fa fa-comments" aria-hidden="true"></i> Recent Messages <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="recent-messages.html"><i class="fa fa-comments" aria-hidden="true"></i> Recent Messages <span class="badge badge-info">NEW</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="plugins-calendar.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</a>
@@ -496,6 +496,7 @@
                                     <i class="fa fa-user-plus bg-success p-1 font-2xl mr-1 float-left"></i>
                                     <div class="h5 text-primary mt-h mb-0">14</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">New Contacts</div>
+                                    <div class="text-muted text-uppercase font-weight-light font-xs">This Week</div>
                                 </div>
                             </div>
                         </div>
@@ -506,6 +507,7 @@
                                     <i class="fa fa-comments bg-warning p-1 font-2xl mr-1 float-left"></i>
                                     <div class="h5 text-primary mt-h mb-0">200</div>
                                     <div class="text-muted text-uppercase font-weight-bold font-xs">Messages Sent</div>
+                                    <div class="text-muted text-uppercase font-weight-light font-xs">This Week</div>
                                 </div>
                             </div>
                         </div>
@@ -531,10 +533,12 @@
                                             <div class="small text-muted" style="margin-top:-10px;">Your Deadline Date</div>
                                         </div>
                                         <div class="col-7">
-                                            <button type="button" data-toggle="modal" data-target="#theModal" class="btn btn-warning float-right mr-1">Text Blitz
-                                            </button>
-                                            <button type="button" class="btn btn-success float-right mr-1">Add Contacts
-                                            </button>
+                                            <a class="btn btn-outline-warning float-right mr-1" data-toggle="modal" href="#theModal"> Text Blitz
+                                            </a>
+                                            <a class="btn btn-outline-success float-right mr-1" href="#">Add Contacts
+                                            </a>
+                                            <a class="btn btn-outline-info float-right mr-1" href="#">Setup Zoom
+                                            </a>
                                         </div>
                                     </div>
                                     
@@ -591,7 +595,7 @@
                                                                     </td>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-default">Inactive</span>
                                                                     </td>
@@ -667,7 +671,7 @@
                                                                     </td>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-warning">Pending</span>
                                                                     </td>
@@ -693,7 +697,7 @@
                                                                     </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-success">Active</span>
                                                                     </td>
@@ -746,7 +750,7 @@
                                                                     </td>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -772,7 +776,7 @@
                                                                     </td>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -798,7 +802,7 @@
                                                                     </td>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -824,7 +828,7 @@
                                                                     </td>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -850,7 +854,7 @@
                                                                     </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    <td>123-456-789</td>
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
