@@ -1,6 +1,6 @@
 $(function(){
 
-  toastr.info('Bootstrap 4 on steroids', 'Welcome to Leaf Admin', {
+  toastr.info('Network like Ninjas!', 'Your Network Ninjas Dojo', {
     closeButton: true,
     progressBar: true,
   });
