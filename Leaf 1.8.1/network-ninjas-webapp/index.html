@@ -88,13 +88,13 @@
                     <a href="new-message.html" class="dropdown-item">
                         <i class="icon-note text-success"></i> Create new message
                     </a>
-                    <a href="#theModal" data-toggle="modal" class="dropdown-item">
+                    <a href="#addContact" data-toggle="modal" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
                     </a>
-                    <a href="#" class="dropdown-item">
+                    <a href="#importSpreadsheet" data-toggle="modal" class="dropdown-item">
                         <i class="icon-book-open text-primary"></i> Import Spreadsheet
                     </a>
                 </div>
@@ -349,27 +349,6 @@
             </li>
 
         </ul>
-                 <div class="modal fade" style="z-index: 3000" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>One fine body…</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
     </header>
 
     <div class="app-body">
@@ -405,6 +384,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="plugins-calendar.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
                     <li class="divider"></li>
                     <li class="nav-title">
@@ -460,7 +442,168 @@
                 </ul>
             </nav>
         </div>
+        
+ <!--Modals-->
+        
+       <div class="modal fade" id="addContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add Contact</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-sm-12">
 
+                            <div class="card">
+                              
+                                <div class="card-block">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="text" class="form-control" id="phoneNumber" placeholder="555-555-5555">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Add to Project</label>
+                                            <div class="col-md-9">
+                                                <div class="checkbox">
+                                                    <label for="checkbox1">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">Option 1
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">Option 2
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox3">
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">Option 3
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+        
+           <div class="modal fade" id="followUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Project Outcome</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                  <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Outcome</label>
+                                            <div class="col-md-9">
+                                                <div class="radio">
+                                                    <label for="radio1">
+                                                        <input type="radio" id="addYes" name="radios" value="option1">Yes
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label for="radio2">
+                                                        <input type="radio" id="addNo" name="radios" value="option2">No
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label for="radio3">
+                                                        <input type="radio" id="setFollowUp" name="radios" value="option3">Set Follow Up
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                  <div class="row">
+                                       <div class="col-sm-12">
+                                       <fieldset class="form-group">
+                                            <label>Choose a follow up date</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                                                </span>
+                                                <input type="text" class="form-control" id="date">
+                                            </div>
+                                            <small class="text-muted">ex. 99/99/9999</small>
+                                        </fieldset>
+                                      </div>
+                                      </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+        
+        
+             <div class="modal fade" id="importSpreadsheet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Import Contacts via Spreadsheet</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                 <div class="col-sm-12">
+                                      <div class="card">
+                                            <div class="card-block">
+                                                <div class="form-group row">
+                                                     <label class="col-md-3 form-control-label" for="file-input">File input</label>
+                                                    <div class="col-md-9">
+                                                    <input type="file" id="file-input" name="file-input">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </div>
+                         
+                            </div>
+                             <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                
+                <!-- /.modal -->
+        
+        
         <!-- Main content -->
         <main class="main">
 
@@ -472,13 +615,8 @@
                 <li class="breadcrumb-item active">Dashboard</li>
             </ol>
 
-
             <div class="container-fluid">
-
-
-
                 <div class="animated fadeIn">
-
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
@@ -515,9 +653,10 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="card">
                                 <div class="card-block p-1 clearfix">
-                                    <i class="fa fa-usd bg-danger p-1 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 text-primary mt-h mb-0">$1 Billion</div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
+                                    <i class="icon-nn-exposure bg-danger p-1 nn-2x nn-inverse mr-1 float-left"></i>
+                                    <div class="h5 text-primary mt-h mb-0">41</div>
+                                    <div class="text-muted text-uppercase font-weight-bold font-xs">Exposures</div>
+                                    <div class="text-muted text-uppercase font-weight-light font-xs">This Week</div>
                                 </div>
                             </div>
                         </div>
@@ -580,7 +719,7 @@
                                                                     <th>Name</th>
                                                                     <th>Email</th>
                                                                     <th>Phone Number</th>
-                                                                    <th>Status</th>
+                                                                    <th>Project</th>
                                                                     <th>Actions</th>
                                                                 </tr>
                                                             </thead>
@@ -597,7 +736,7 @@
                                                                     <td>email@email.com</td>
                                                                     <td>123-456-789</td>
                                                                     <td>
-                                                                        <span class="badge badge-default">Inactive</span>
+                                                                        <span class="badge badge-default">Reach Partner</span>
                                                                     </td>
                                                                      <td>
                                                                         <a class="btn btn-warning" href="profile.html">
@@ -610,60 +749,11 @@
                                                                         <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" data-toggle="modal" href="#followUp">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
-                                                                </tr>
-                    <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-primary modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Stefan Forsberg</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="col-md-12 mb-2">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#home3" role="tab" aria-controls="home"><i class="icon-calculator"></i> Info</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> Messages</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#messages3" role="tab" aria-controls="messages"><i class="icon-pie-chart"></i> Notes</a>
-                                    </li>
-                                </ul>
-
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="home3" role="tabpanel">
-                                        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="tab-pane" id="profile3" role="tabpanel">
-                                        2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="tab-pane" id="messages3" role="tabpanel">
-                                        3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->  
+                                                                </tr> 
                                                                 <tr>
                                                                         <td> 
                                                                         <label class="switch switch-icon switch-pill switch-primary">
@@ -688,8 +778,8 @@
                                                                         <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -717,8 +807,8 @@
                                                                         <a class="btn btn-success" href="UIkits-email-compose.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -767,14 +857,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -796,14 +886,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -825,14 +915,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -854,14 +944,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -883,14 +973,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -939,14 +1029,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-info"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -968,14 +1058,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -997,14 +1087,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1026,14 +1116,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1055,14 +1145,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1084,14 +1174,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1113,14 +1203,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1169,14 +1259,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1198,14 +1288,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1227,14 +1317,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1256,14 +1346,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1285,14 +1375,14 @@
                                                                         <a class="btn btn-success" href="#">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-warning" href="#">
+                                                                           <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-warning" href="#">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
-                                                                        <a class="btn btn-danger" href="#">
-                                                                            <i class="fa fa-trash-o "></i>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>

@@ -386,6 +386,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="plugins-calendar.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
+                    </li>
                     <li class="divider"></li>
                     <li class="nav-title">
                         Ninja Tools
@@ -441,6 +444,58 @@
             </nav>
         </div>
 
+        <div class="modal fade" id="addToProject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add "Contact" to Project</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-sm-12">
+
+                            <div class="card">
+                              
+                                <div class="card-block">
+                                  
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Which Project?</label>
+                                            <div class="col-md-9">
+                                                <div class="checkbox">
+                                                    <label for="checkbox1">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">Option 1
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">Option 2
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox3">
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">Option 3
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+        
         <!-- Main content -->
         <main class="main">
 
@@ -502,16 +557,16 @@
                                         <td>email@email.com</td>
                                         <td>123-456-789</td>
                                         <td>
-                                            <span class="badge badge-success">Project 1</span>
+                                            <a href="#addToProject" data-toggle="modal"><span class="badge badge-success"><i class="icon-plus"></i></span></a>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -532,15 +587,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
+                                            <a href="#addToProject" data-toggle="modal"><span class="badge badge-success"><i class="icon-plus"></i></span></a>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -561,15 +617,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -591,15 +648,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -620,15 +678,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-danger">Project 3</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -649,15 +708,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-danger">Project 3</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -678,15 +738,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-warning">Project 2</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="new-message.html">
+                                            <a class="btn btn-success" href="new-message.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -707,15 +768,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-warning">Project 2</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="profile.html">
+                                            <a class="btn btn-warning" href="profile.html">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -736,15 +798,16 @@
                                         <td>123-456-789</td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
+                                            <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -767,13 +830,13 @@
                                             <span class="badge badge-success">Active</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -796,13 +859,13 @@
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -825,13 +888,13 @@
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -854,13 +917,13 @@
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="UIkits-email-compose.html">
+                                            <a class="btn btn-success" href="UIkits-email-compose.html">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -883,13 +946,13 @@
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -912,13 +975,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -942,13 +1005,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -972,13 +1035,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1002,13 +1065,13 @@
                                             <span class="badge badge-success">Active</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1032,13 +1095,13 @@
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1062,13 +1125,13 @@
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1092,13 +1155,13 @@
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1122,13 +1185,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1152,13 +1215,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1182,13 +1245,13 @@
                                             <span class="badge badge-success">Active</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1212,13 +1275,13 @@
                                             <span class="badge badge-success">Active</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1242,13 +1305,13 @@
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1272,13 +1335,13 @@
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1302,13 +1365,13 @@
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1332,13 +1395,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1362,13 +1425,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1392,13 +1455,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
@@ -1422,13 +1485,13 @@
                                             <span class="badge badge-warning">Pending</span>
                                         </td>
                                         <td>
-                                            <a class="btn btn-success" href="#">
+                                            <a class="btn btn-warning" href="#">
                                                 <i class="fa fa-search-plus "></i>
                                             </a>
-                                              <a class="btn btn-warning" href="#">
+                                              <a class="btn btn-info" href="#">
                                                 <i class="icon-camrecorder"></i>
                                             </a>
-                                            <a class="btn btn-info" href="#">
+                                            <a class="btn btn-success" href="#">
                                                 <i class="fa fa-edit "></i>
                                             </a>
                                             <a class="btn btn-danger" href="#">
