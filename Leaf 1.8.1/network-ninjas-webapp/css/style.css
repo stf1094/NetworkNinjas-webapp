@@ -13986,18 +13986,24 @@ base-chart.chart {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border-bottom: 1px solid #d1d4d7;
     text-align: left;
     outline: none;
     transition: 0.4s;
 }
 
 .accordion.active, .accordion:hover {
-    background-color: #d1d4d7; 
+    background-color: #f8f9fa; 
 }
 
 .downline-data {
-    padding: 0 18px;
+    padding: 1.25rem;
+    display: none;
+    background-color: white;
+}
+
+.exposure-notes {
+    padding: 1.25rem;
     display: none;
     background-color: white;
 }
