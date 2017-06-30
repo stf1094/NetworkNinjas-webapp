@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Leaf - Bootstrap 4 Admin Template</title>
+    <title>Create Project | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -63,10 +63,6 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
@@ -91,8 +87,8 @@
                     <a href="#" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                      <a href="new-category.html" class="dropdown-item">
-                        <i class="fa fa-sticky-note-o text-info"></i> Add new category
+                     <a href="new-category.html" class="dropdown-item">
+                        <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -380,21 +376,18 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-title">
-                        Dashboard
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard</a>
-                    </li>
-
-                    <li class="divider"></li>
-                    <li class="nav-title">
                         YOUR BUSINESS
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html"><i class="icon-people"></i> Contacts</a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html"><i class="icon-star"></i> Projects</a>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-star"></i> Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hotlist.html"><i class="icon-fire"></i> Hot List</a>
@@ -412,15 +405,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Ninja Tools
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-star"></i> Text Blitz</a>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link" href="#"><i class="icon-layers"></i> Memory Jogger<span class="badge badge-primary">Coming Soon</span></a>
+                        <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -431,10 +417,8 @@
 
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item"><a href="#">Admin</a>
-                </li>
-                <li class="breadcrumb-item active">Create a Project</li>
+                <li class="breadcrumb-item"><a href="index.html"></a>Home</li>
+                <li class="breadcrumb-item active">Create Project</li>
             </ol>
 
 
@@ -466,7 +450,7 @@
                                             <label class="col-md-3 form-control-label" for="text-input">How Many Contacts?</label>
                                             <div class="col-md-9">
                                                 <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Enter a number">
-                                                    <span class="help-block">How many people do you need to contact to reach this goal?</span>
+                                                    <span class="help-block">How many people are you going to contact to reach this goal?</span>
                                             </div>
                                         </div>
                                         <!--
@@ -975,38 +959,10 @@
                         </div>
                             <!--2nd Card-->
                             <div class="card card-accent-primary">
-                                 <div class="card-header">
-                                    <strong>Project Confirmation</strong>
-                                 </div>
-                                <div class="card-block">
-                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                        <div id="new-start-date" class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="text-input">Set New Start Date</label>
-                                             <div class="cold-md-9 pl-1">
-                                                    <fieldset class="form-group">
-                                                        
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i>
-                                                            </span>
-                                                            <input name="daterange" class="form-control" type="text">
-                                                        </div>
-                                                        <label>What is your new start date for this project?</label>
-                                                    </fieldset>
-                                                </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                  <div class="card-footer">
-                                                  <div class="form-actions">
-                                                    <button type="submit" class="btn btn-primary">Complete Project</button>
-                                                    <button type="button" class="btn btn-default">Go Back</button>
-                                                </div>
-                                             </div>
-                                </div>
-                        
                     </div>
                 </div>
             <!-- /.conainer-fluid -->
+            </div>
             </div>
             </div>
         </main>

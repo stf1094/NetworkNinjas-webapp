@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Reporting | The Network Ninjas</title>
+    <title>Calendar | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -31,6 +31,10 @@
 
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!--Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
 </head>
 
@@ -56,7 +60,7 @@
 -->
 
 <body class="app header-fixed aside-menu-fixed aside-menu-hidden">
-    <header class="app-header navbar">
+         <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">☰</button>
         <a class="navbar-brand" href="#"></a>
         <ul class="nav navbar-nav hidden-md-down">
@@ -64,7 +68,7 @@
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
             <li class="nav-item px-1">
-                <a class="nav-link" href="#">Contacts</a>
+                <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="#">Settings</a>
@@ -84,10 +88,10 @@
                     <a href="new-message.html" class="dropdown-item">
                         <i class="icon-note text-success"></i> Create new message
                     </a>
-                    <a href="#" class="dropdown-item">
+                    <a href="#theModal" data-toggle="modal" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                     <a href="new-category.html" class="dropdown-item">
+                      <a href="new-category.html" class="dropdown-item">
                         <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
@@ -106,7 +110,7 @@
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
 
                     <div class="dropdown-header text-center">
-                        <strong>You have 5 messages</strong>
+                        <strong>You have 5 Notifications</strong>
                     </div>
 
                     <a href="#" class="dropdown-item">
@@ -376,7 +380,7 @@
                        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recent-messages.html"><i class="fa fa-comments" aria-hidden="true"></i> Recent Messages</a>
+                        <a class="nav-link" href="recent-messages.html"><i class="fa fa-comments" aria-hidden="true"></i>Recent Messages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="plugins-calendar.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</a>
@@ -384,8 +388,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Text Blitz</a>
+                     <li class="nav-item">
+                        <a class="nav-link" href="downline.html"><i class="fa fa-bolt" aria-hidden="true"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -397,107 +401,61 @@
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Reporting</li>
+                <li class="breadcrumb-item active">Slider Test</li>
             </ol>
 
 
             <div class="container-fluid">
+
+
                 <div class="animated fadeIn">
-
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card">
-                                <div class="card-block p-1 clearfix">
-                                    <i class="fa fa-users bg-primary p-1 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 text-primary mt-h mb-0">1056</div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs">Contacts</div>
-                                </div>
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                         Slider Test
+                            
                         </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card">
+                        <div class="card-block">
+                             <div class="slider" style="width: 800px;">
+                             <div class="card">
                                 <div class="card-block p-1 clearfix">
-                                    <i class="fa fa-user-plus bg-success p-1 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 text-primary mt-h mb-0">14</div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs">New Contacts</div>
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create Project</div>
                                 </div>
                             </div>
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card">
+                                 <div class="card">
                                 <div class="card-block p-1 clearfix">
-                                    <i class="fa fa-comments bg-warning p-1 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 text-primary mt-h mb-0">200</div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs">Messages Sent</div>
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create 1</div>
+                                </div>
+                              </div>
+                                <div class="card">
+                                <div class="card-block p-1 clearfix">
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create 2</div>
                                 </div>
                             </div>
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card">
+                                <div class="card">
                                 <div class="card-block p-1 clearfix">
-                                    <i class="fa fa-usd bg-danger p-1 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 text-primary mt-h mb-0">$1 Billion</div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs">Income</div>
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create 3</div>
                                 </div>
                             </div>
+                               <div class="card">
+                                <div class="card-block p-1 clearfix">
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create4</div>
+                                </div>
+                            </div>
+                                <div class="card">
+                                <div class="card-block p-1 clearfix">
+                                    <i class="icon-star bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create Project</div>
+                                </div>
+                            </div>
+                              </div>
                         </div>
                     </div>
-                    
-                    <!--Start Personal Reporting Card-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header">
-                                Your Personal Reports
-                                </div>
-                                <div class="card-block">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Last 7 Days</th>
-                                                <th>Last 14 Days</th>
-                                                <th>Last 30 Days</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><b>List Growth</b></td>
-                                                <td>1</td>
-                                                <td>5</td>
-                                                <td>7</td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Exposures</b></td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>New Associates</b></td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>New Customers</b></td>
-                                                <td>2</td>
-                                                <td>4</td>
-                                                <td>10</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--end personal reporting card-->
                 </div>
-
 
             </div>
             <!-- /.conainer-fluid -->
@@ -814,19 +772,21 @@
 
     <script src="js/app.js"></script>
 
-
+    <!--SLick Slider-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/libs/slick.js" type="text/javascript" charset="utf-8"></script>
 
 
 
     <!-- Plugins and scripts required by this views -->
-    <script src="js/libs/toastr.min.js"></script>
-    <script src="js/libs/gauge.min.js"></script>
     <script src="js/libs/moment.min.js"></script>
-    <script src="js/libs/daterangepicker.js"></script>
+    <script src="js/libs/fullcalendar.min.js"></script>
+    <script src="js/libs/gcal.js"></script>
 
 
     <!-- Custom scripts required by this view -->
-    <script src="js/views/main.js"></script>
+    <script src="js/views/calendar.js"></script>
 
 </body>
 

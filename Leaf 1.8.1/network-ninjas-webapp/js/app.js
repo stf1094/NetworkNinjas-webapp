@@ -156,3 +156,30 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+
+var acc = document.getElementsByClassName("accordion-downline");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+
+/*Slick*/
+
+$(document).ready(function(){
+  $('.slider').slick({
+    dots: true,
+    infinite: true,
+    cssEase: 'linear',
+    arrows: true
+  });
+});
+  

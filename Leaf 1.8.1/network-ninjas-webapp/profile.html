@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Leaf - Bootstrap 4 Admin Template</title>
+    <title>Profile | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -63,10 +63,6 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
@@ -91,8 +87,8 @@
                     <a href="#theModal" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                      <a href="new-category.html" class="dropdown-item">
-                        <i class="fa fa-sticky-note-o text-info"></i> Add new category
+                     <a href="new-category.html" class="dropdown-item">
+                        <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -352,27 +348,6 @@
             </li>
 
         </ul>
-                 <div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>One fine body…</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
     </header>
 
     <div class="app-body">
@@ -380,24 +355,21 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-title">
-                        Dashboard
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard</a>
-                    </li>
-
-                    <li class="divider"></li>
-                    <li class="nav-title">
                         YOUR BUSINESS
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html"><i class="icon-people"></i> Contacts</a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html"><i class="icon-star"></i> Projects</a>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-star"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hotlist.html"><i class="icon-fire"></i> Hot List</a>
+                        <a class="nav-link" href="hotlist.html"><i class="fa fa-fire"></i> Hot List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reporting.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reporting</a>
@@ -412,15 +384,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Ninja Tools
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-star"></i> Text Blitz</a>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link" href="#"><i class="icon-layers"></i> Memory Jogger<span class="badge badge-primary">Coming Soon</span></a>
+                        <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -490,15 +455,133 @@
                     <!-- /.modal-dialog -->
                 </div>
         
+         <!--Modal for Adding/Removing Groups and Projects-->
+        <div class="modal fade" id="tagManager" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Projects/Groups - "Name"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-block">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Groups</label>
+                                            <div class="col-md-9">
+                                                <div class="checkbox">
+                                                    <label for="checkbox1">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">NASCAR
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">TIR
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="select">Add to Group</label>
+                                            <div class="col-md-9">
+                                                <select id="select" name="select" class="form-control" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                          <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Projects</label>
+                                            <div class="col-md-9">
+                                                <div class="checkbox">
+                                                    <label for="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">Legal Shield
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="select">Add to Project</label>
+                                            <div class="col-md-9">
+                                                <select id="select" name="select" class="form-control" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+        
+        <!--Modal for Preferred Communication Method-->
+        <div class="modal fade" id="pcm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Preferred Communication Method</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-block">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Method</label>
+                                            <div class="col-md-9">
+                                                <div class="radio">
+                                                    <label for="radio1">
+                                                        <input type="radio" id="radio1" name="radios" value="option1">Text
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label for="radio2">
+                                                        <input type="radio" id="radio2" name="radios" value="option2">Email
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+        
 
         <!-- Main content -->
         <main class="main">
 
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item"><a href="#">Admin</a>
-                </li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active">Profile</li>
             </ol>
 
@@ -509,7 +592,7 @@
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    Stefan Forsberg
+                                    <h3>Stefan Forsberg</h3>
                                 </div>
                                 <div class="card-block">
                                     <div class="row">
@@ -537,6 +620,33 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fa fa-comments"></i>
+                                    Preferred communication method
+                                    <a class="btn btn-sm btn-outline-primary" data-toggle="modal" href="#pcm" style="float: right">Edit</a>
+                                </div>
+                                <div class="card-block">
+                                    Text
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-sm-6">
+                               <div class="card">
+                                <div class="card-header">
+                                    <i class="icon-tag"></i>
+                                    Projects and Groups
+                                    <a class="btn btn-sm btn-outline-primary" data-toggle="modal" href="#tagManager" style="float: right">Edit</a> 
+                                </div>
+                                <div class="card-block">
+                                   <span class="badge badge-warning">NASCAR</span>
+                                   <span class="badge badge-success">Legal Shield</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12">
                             <div class="card email-app">
                                 <nav>
@@ -545,7 +655,7 @@
                                 
                                  <ul class="nav nav-tabs">
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#exposures"><i class="fa fa-bookmark"></i> Exposures</a>
+                                            <a class="nav-link" data-toggle="tab" href="#exposures"><i class="icon-speech"></i> Exposures</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" data-toggle="tab" href="#notes"><i class="icon-book-open"></i> Notes</a>
@@ -606,7 +716,7 @@
                                        
                                    
                            <div class="tab-pane active" id="exposures">
-                                      
+                            <div id="communication" style="height: 300px; overflow-y: scroll">        
                             <div class="col-sm-12">
                             <div class="card card-accent-info">
                                 <div class="card-header accordion"><span class="badge badge-default">Phone</span>
@@ -673,31 +783,8 @@
                             </div>
                         </div>
                                       
-                                       <!--
-                                        <div class="attachments">
-                                            <ul>
-                                                <li>
-                                                    <span class="badge badge-danger">zip</span> <b>Exposure 1</b>  <i>(May 10th 5:30PM)</i>
-                                                    <span class="quickMenu">
-                                                        <a href="#" class="fa fa-search"><i></i></a>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="badge badge-info">txt</span> <b>Exposure 2</b>  <i>(May 15th 3:00PM)</i>
-                                                    <span class="quickMenu">
-                                                        <a href="#" class="fa fa-search"><i></i></a>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="badge badge-success">xls</span> <b>Exposure 3</b>  <i>(May 31st 9:00AM)</i>
-                                                    <span class="quickMenu">
-                                                        <a href="#" class="fa fa-search"><i></i></a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div> 
-
-                                        <form method="post" action="">
+                               </div>
+                                   <form method="post" action="" class="pt-2">
 
                                             <div class="form-group">
 
@@ -711,10 +798,38 @@
 
                                             </div>
 
-                                        </form> -->
+                                        </form> 
                                </div>
                                     
                                         <div class="tab-pane" id="notes">
+                                            
+                                                  <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fa fa-comments"></i>
+                                    Preferred communication method
+                                    <a class="btn btn-sm btn-outline-primary" data-toggle="modal" href="#pcm" style="float: right">Edit</a>
+                                </div>
+                                <div class="card-block">
+                                    Text
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-sm-6">
+                               <div class="card">
+                                <div class="card-header">
+                                    <i class="icon-tag"></i>
+                                    TAGS
+                                    <a class="btn btn-sm btn-outline-primary" data-toggle="modal" href="#tagManager" style="float: right">Edit</a> 
+                                </div>
+                                <div class="card-block">
+                                   <span class="badge badge-success">NASCAR</span>
+                                   <span class="badge badge-info">Legal Shield</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
                                         <div class="message">
                                         <div class="header">
 
@@ -737,12 +852,13 @@
                                                 <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here write notes"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <button tabindex="3" type="submit" class="btn btn-success">Send message</button>
+                                                <button tabindex="3" type="submit" class="btn btn-success">Save Note</button>
                                             </div>
                                         </form>
                                     </div>
                                         </div>
                                         <!--End info-->
+                                    
                                         </div>
                                     </main>
                                 </div>

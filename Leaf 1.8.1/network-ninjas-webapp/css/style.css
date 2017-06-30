@@ -2929,10 +2929,10 @@ header.navbar {
     padding: 0.5rem 1rem;
     margin-right: 0;
     background-color: #193441;
-    background-image: url("../img/networkninjas-white-logo.png");
+    background-image: url("../img/nn-white-logo_1.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 110px auto;
+    background-size: 130px auto;
     border-bottom: 1px solid #f7941d; }
   header.navbar .navbar-nav {
     flex-direction: row;
@@ -13796,7 +13796,7 @@ base-chart.chart {
   display: flex;
   flex: 1;
   flex-direction: row;
-  overflow-x: hidden; }
+  overflow-x: hidden;}
   .email-app nav {
     flex: 0 0 200px;
     order: -1;
@@ -13863,7 +13863,7 @@ base-chart.chart {
             overflow: hidden !important;
             text-overflow: ellipsis; }
           .email-app main ul.messages-list li .header .date {
-            width: 50%;
+            width: 30%;
             text-align: right;
             float: right; }
         .email-app main ul.messages-list li .title {
@@ -13982,7 +13982,6 @@ base-chart.chart {
 
 .accordion {
     background-color: #fff;
-    color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -13996,10 +13995,23 @@ base-chart.chart {
     background-color: #f8f9fa; 
 }
 
-.downline-data {
+.accordion-body {
     padding: 1.25rem;
     display: none;
     background-color: white;
+}
+
+.accordion-downline {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion-downline.active, .accordion:hover {
+ 
 }
 
 .exposure-notes {

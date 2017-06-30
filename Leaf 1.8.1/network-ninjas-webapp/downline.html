@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Downline - The Network Ninjas</title>
+    <title>Downline | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -64,10 +64,6 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="#">Contacts</a>
             </li>
@@ -92,8 +88,8 @@
                     <a href="#" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                    <a href="new-category.html" class="dropdown-item">
-                        <i class="fa fa-sticky-note-o text-info"></i> Add new category
+                     <a href="new-category.html" class="dropdown-item">
+                        <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -361,24 +357,21 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-title">
-                        Dashboard
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard</a>
-                    </li>
-
-                    <li class="divider"></li>
-                    <li class="nav-title">
                         YOUR BUSINESS
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html"><i class="icon-people"></i> Contacts</a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html"><i class="icon-star"></i> Projects</a>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-star"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hotlist.html"><i class="icon-fire"></i> Hot List</a>
+                        <a class="nav-link" href="hotlist.html"><i class="fa fa-fire"></i> Hot List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reporting.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reporting</a>
@@ -393,15 +386,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Ninja Tools
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-star"></i> Text Blitz</a>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link" href="#"><i class="icon-layers"></i> Memory Jogger<span class="badge badge-primary">Coming Soon</span></a>
+                        <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -410,7 +396,7 @@
         <!--Downline Activity Reporting Modal-->
         
            <div class="modal fade" id="downlineFunnel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-primary modal-lg" role="document">
+                    <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Ned Ninja</h4>
@@ -422,25 +408,32 @@
                                 <div class="col-md-12 mb-2">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#activity" role="tab" aria-controls="home"><i class="icon-calculator"></i> Activity</a>
+                                        <a class="nav-link active" data-toggle="tab" href="#projects" role="tab" aria-controls="home"><i class="icon-calculator"></i> Activity</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" data-toggle="tab" href="#reporting" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> Reporting</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="activity" role="tabpanel">
-                                                  <div class="row">
-                                        <div class="col-5">
-                                            <h4 class="card-title">Reach Partner</h4>
-                                            <div class="small text-muted" style="margin-top:-10px;">Your Deadline Date</div>
-                                        </div>
-                                    </div>
-                                    <div class="progress progress-sm my-1">
+                                    <div class="tab-pane active" id="projects" role="tab-panel">
+                                        <!--Start Project 1-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header accordion">
+                                        <div class="h4 m-0">Get 15 Associates</div>
+                                        <div>Reach Partner</div>
+
+                                        <div class="progress progress-sm my-1">
                                             <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                    
-                                <div class="col-md-12 mb-2 mt-2">
+                                    </div>
+                                    <div class="card-block accordion-body">
+                                        
+                                        <!--Start of tabs-->
+                                        
+                            <div class="row">
+                            <div class="col-md-12 mb-2">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" data-toggle="tab" href="#waiting" role="tab" aria-controls="waiting">Waiting to hear from you &nbsp;<span class="badge badge-pill badge-default">3</span></a>
@@ -471,40 +464,31 @@
                                                                     <th>Name</th>
                                                                     <th>Email</th>
                                                                     <th>Phone Number</th>
-                                                                    <th>Project</th>
                                                                     <th>Exposures</th>
+                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                   
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
-                                                                    <td>
-                                                                        <span class="badge badge-default">Reach Partner</span>
-                                                                    </td>
-                                                                    <td>2</td>
-                                                                   
-                                                                </tr> 
+                                                                    <td>Admin</td>
+                                                                    <td>4</td>
+                                                           
+                                                                </tr>
                                                                 <tr>
-                                                              
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
-                                                                    <td>
-                                                                        <span class="badge badge-warning">Pending</span>
-                                                                    </td>
-                                                                    <td>1</td>
+                                                                    <td>Member</td>
+                                                                    <td>4</td>
+                                                                
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
-                                                                    <td>
-                                                                        <span class="badge badge-success">Active</span>
-                                                                    </td>
-                                                                    <td>2</td>
+                                                                    <td>Staff</td>
+                                                                    <td>4</td>
+                                                                
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -524,7 +508,6 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    
                                                                     <th>Name</th>
                                                                     <th>Email</th>
                                                                     <th>Phone Number</th>
@@ -534,54 +517,48 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                 
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>Member</td>
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>Staff</td>
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
-                                                                    </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>Admin</td>
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                     <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>Member</td>
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>Staff</td>
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -601,7 +578,6 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    
                                                                     <th>Name</th>
                                                                     <th>Email</th>
                                                                     <th>Phone Number</th>
@@ -611,74 +587,67 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                  
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                     <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                    <td>1</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
-                                                                    <td>3</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>1</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                  
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>1</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -698,7 +667,6 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    
                                                                     <th>Name</th>
                                                                     <th>Email</th>
                                                                     <th>Phone Number</th>
@@ -707,39 +675,34 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                  
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
                                                                     <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
-                                                                    <td>1</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
-                                                                     <td>1</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
-                                                                   
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
                                                                     <td>567-456-345</td>
-                                                                    <td>2</td>
+                                                                    <td>4</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -750,7 +713,20 @@
                                     </div>
                                 </div>
                             </div>
+ 
+                            <!--/.col-->
+                            
+                        </div>
+                                        
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End project 1-->
+                        
+                                    </div>
+                                    
+                                    <!--Start Reporting Tab-->
                                     <div class="tab-pane" id="reporting" role="tabpanel">
                                                  <table class="table table-striped">
                                                                             <thead>
@@ -808,9 +784,7 @@
 
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item"><a href="#">Admin</a>
-                </li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active">Downline</li>
             </ol>
 
@@ -1029,33 +1003,59 @@
                                             <tbody>
                                                 <tr class="treegrid-1 expanded">
                                                     <td>Ned Ninja</td>
-                                                    <td>Ned Ninja's Goal
-                                                     <div class="progress progress-sm my-h">
+                                                    <td>
+                                                        <div class="accordion-downline">
+                                                           <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                        </div>         
+                                                        <div class="accordion-body">
+                                                            <span>Ned Ninja's Project</span>
+                                                             <div class="progress progress-sm my-h">
                                                                 <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                             </div>
+                                                            <span>Ned Project 2</span>
+                                                            <div class="progress progress-sm my-h">
+                                                                <div class="progress-bar bg-warning" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
+                                                            <span>Ned Project 3</span>
+                                                            <div class="progress progress-sm my-h">
+                                                                <div class="progress-bar bg-warning" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
                                                     </td>
-                                                          <td>
-                                                            <a class="btn btn-warning" href="profile.html">
-                                                                <i class="fa fa-search-plus"></i>
-                                                            </a>
-                                                            <a class="btn btn-info" href="#">
-                                                                <i class="icon-camrecorder"></i>
-                                                            </a>
-                                                                        
-                                                            <a class="btn btn-success" href="new-message.html">
-                                                                <i class="fa fa-edit "></i>
-                                                            </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
-                                                                <i class="fa fa-bar-chart"></i>
-                                                            </a>
-                                                         </td>
+                                                    <td>
+                                                      <a class="btn btn-warning" href="profile.html">
+                                                           <i class="fa fa-search-plus"></i>
+                                                      </a>
+                                                      <a class="btn btn-info" href="#">
+                                                          <i class="icon-camrecorder"></i>
+                                                      </a>
+
+                                                      <a class="btn btn-success" href="new-message.html">
+                                                          <i class="fa fa-edit "></i>
+                                                      </a>
+                                                      <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                          <i class="fa fa-bar-chart"></i>
+                                                      </a>
+                                                 </td>
                                                 </tr>
                                                 <tr class="treegrid-2 treegrid-parent-1">
                                                     <td>Greg Ninja</td>
-                                                    <td>Greg Ninja's Goal
-                                                     <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-warning" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <td>
+                                                        <div class="accordion-downline">See Project Status</div>         
+                                                        <div class="accordion-body">
+                                                            <span>Greg Ninja's Project</span>
+                                                             <div class="progress progress-sm my-h">
+                                                                <div class="progress-bar bg-primary" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                                             </div>
+                                                            <span>Greg Project 2</span>
+                                                            <div class="progress progress-sm my-h">
+                                                                <div class="progress-bar bg-warning" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
+                                                            <span>Greg Project 3</span>
+                                                            <div class="progress progress-sm my-h">
+                                                                <div class="progress-bar bg-warning" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                         <td>
                                                             <a class="btn btn-warning" href="profile.html">
@@ -1241,6 +1241,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!--end downline card-->
+               
                         </div>
                     </div>
                 </div>

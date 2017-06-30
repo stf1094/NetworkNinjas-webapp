@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Leaf - Bootstrap 4 Admin Template</title>
+    <title>Calendar | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -63,10 +63,6 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
             <li class="nav-item px-1">
                 <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
@@ -90,6 +86,9 @@
                     </a>
                     <a href="#theModal" data-toggle="modal" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
+                    </a>
+                      <a href="new-category.html" class="dropdown-item">
+                        <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -349,27 +348,6 @@
             </li>
 
         </ul>
-                 <div class="modal fade" style="z-index: 3000" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>One fine body…</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
     </header>
 
     <div class="app-body">
@@ -377,31 +355,28 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-title">
-                        Dashboard
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard</a>
-                    </li>
-
-                    <li class="divider"></li>
-                    <li class="nav-title">
                         YOUR BUSINESS
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html"><i class="icon-people"></i> Contacts</a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html"><i class="icon-star"></i> Projects</a>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-star"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hotlist.html"><i class="icon-fire"></i> Hot List</a>
+                        <a class="nav-link" href="hotlist.html"><i class="fa fa-fire"></i> Hot List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reporting.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reporting</a>
                        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recent-messages.html"><i class="fa fa-comments" aria-hidden="true"></i></a>
+                        <a class="nav-link" href="recent-messages.html"><i class="fa fa-comments" aria-hidden="true"></i>Recent Messages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="plugins-calendar.html"><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</a>
@@ -409,56 +384,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Ninja Tools
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Text Blitz</a>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-login.html" target="_top"><i class="icon-star"></i> Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-register.html" target="_top"><i class="icon-star"></i> Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-404.html" target="_top"><i class="icon-star"></i> Error 404</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-500.html" target="_top"><i class="icon-star"></i> Error 500</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-layers"></i> Memory Jogger</a>
-
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item nav-dropdown">
-                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Invoicing</a>
-                                <ul class="nav-dropdown-items">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-invoicing-invoice.html"><i class="icon-speech"></i> Invoice</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item nav-dropdown">
-                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Email</a>
-                                <ul class="nav-dropdown-items">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-inbox.html"><i class="icon-speech"></i> Inbox</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-message.html"><i class="icon-speech"></i> Message</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-compose.html"><i class="icon-speech"></i> Compose</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                     <li class="nav-item">
+                        <a class="nav-link" href="downline.html"><i class="fa fa-bolt" aria-hidden="true"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -469,10 +396,8 @@
 
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item"><a href="#">Admin</a>
-                </li>
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Calendar</li>
             </ol>
 
 

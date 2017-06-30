@@ -18,7 +18,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Contacts - The Network Ninjas</title>
+    <title>Contacts | The Network Ninjas</title>
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -65,9 +65,6 @@
             </li>
 
             <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item px-1">
                 <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
             <li class="nav-item px-1">
@@ -91,8 +88,8 @@
                     <a href="#" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                      <a href="new-category.html" class="dropdown-item">
-                        <i class="fa fa-sticky-note-o text-info"></i> Add new category
+                     <a href="new-category.html" class="dropdown-item">
+                        <i class="icon-people text-info"></i> Create new group
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -360,24 +357,21 @@
             <nav class="sidebar-nav">
                 <ul class="nav">
                     <li class="nav-title">
-                        Dashboard
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard</a>
-                    </li>
-
-                    <li class="divider"></li>
-                    <li class="nav-title">
                         YOUR BUSINESS
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html"><i class="icon-people"></i> Contacts</a>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html"><i class="icon-star"></i> Projects</a>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-star"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hotlist.html"><i class="icon-fire"></i> Hot List</a>
+                        <a class="nav-link" href="hotlist.html"><i class="fa fa-fire"></i> Hot List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reporting.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reporting</a>
@@ -392,15 +386,8 @@
                      <li class="nav-item">
                         <a class="nav-link" href="downline.html"><i class="fa fa-level-down" aria-hidden="true"></i> Downline</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Ninja Tools
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-star"></i> Text Blitz</a>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link" href="#"><i class="icon-layers"></i> Memory Jogger<span class="badge badge-primary">Coming Soon</span></a>
+                        <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Text Blitz</a>
                     </li>
                 </ul>
             </nav>
@@ -458,14 +445,78 @@
                 </div>
                 <!-- /.modal -->
         
+         <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Group Manager - "Name"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-block">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Group</label>
+                                            <div class="col-md-9">
+                                                <div class="checkbox">
+                                                    <label for="checkbox1">
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">NASCAR
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label for="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">Legal Shield
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 form-control-label">Add new group</label>
+                                            <div class="col-md-9">
+                                                <fieldset class="form-group">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="icon-tag"></i>
+                                                        </span>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                         <div class="form-group row">
+                                            <label class="col-md-3 form-control-label" for="select">Choose existing group</label>
+                                            <div class="col-md-9">
+                                                <select id="select" name="select" class="form-control" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Group #1</option>
+                                                    <option value="2">Group #2</option>
+                                                    <option value="3">Group #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+        
         <!-- Main content -->
         <main class="main">
 
             <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item"><a href="#">Admin</a>
-                </li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contacts</li>
             </ol>
 
@@ -484,14 +535,37 @@
                                 </a>
                             </div>
                         </div>
-                        <div>
+                        <div class="row">
+                            <div class="col-sm-6">
                             <div class="ml-1 my-1">
-                                <p>Select All<p>
+                                <div class="row">
+                                <div class="col-sm-3">
+                                    <p>Select All<p>
                                   <label class="switch switch-icon switch-pill switch-primary">
                                                 <input type="checkbox" class="switch-input" checked="">
                                                 <span class="switch-label" data-on="" data-off=""></span>
                                                 <span class="switch-handle"></span>
                                 </label>
+                                </div>
+                              
+                                 <div class="form-group col-sm-7">
+                                    
+                                                <select id="select" name="select" class="form-control" size="1">
+                                                    <option value="0">Select an Action</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            
+                                        </div>
+                                    <div class="col-sm-2">
+                                         <a class="btn btn-success" href="profile.html">
+                                                Submit
+                                            </a>
+                                    </div>
+                                    </div>
+                            </div>
+                                   
                             </div>
                         </div>
                         <div class="card-block">
@@ -500,8 +574,8 @@
                                     <tr>
                                         <th>Select</th>
                                         <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Phone Number</th>
+                                        <th>Contact Info</th>
+                                        <th>Groups</th>
                                         <th>Projects</th>
                                         <th>Actions</th>
                                     </tr>
@@ -515,9 +589,19 @@
                                                 <span class="switch-handle"></span>
                                             </label>
                                         </td>
-                                        <td>Anton Phunihel</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        <td>Christian Medaglia</td>
+                                        <td>
+                                            <span>email@email.com</span><br>
+                                            <span>email2@email.com</span> <br>
+                                            <span>123-333-3333 </span> <br> 
+                                            <span>555-555-5555</span> <br>
+                                            <span>508-867-5309</span>
+                                        </td>
+                                        <td>
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <a href="#addToProject" data-toggle="modal"><span class="badge badge-success"><i class="icon-plus"></i></span></a>
                                         </td>
@@ -545,8 +629,15 @@
                                             </label>
                                         </td>
                                         <td>Alphonse Ivo</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        <td>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td>
+                                          <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
                                             <a href="#addToProject" data-toggle="modal"><span class="badge badge-success"><i class="icon-plus"></i></span></a>
@@ -575,8 +666,16 @@
                                             </label>
                                         </td>
                                         <td>Thancmar Theophanes</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        <td>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td>
+                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
@@ -606,8 +705,15 @@
                                             </label>
                                         </td>
                                         <td>Walerian Khwaja</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        <td>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td>
+                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
@@ -636,10 +742,17 @@
                                             </label>
                                         </td>
                                         <td>Clemens Janko</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
                                         <td>
-                                            <span class="badge badge-danger">Project 3</span>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Project 3</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
@@ -666,10 +779,18 @@
                                             </label>
                                         </td>
                                         <td>Chidubem Gottlob</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
                                         <td>
-                                            <span class="badge badge-danger">Project 3</span>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td>
+                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Project 3</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
@@ -697,9 +818,16 @@
                                         </td>
                                         <td>Hristofor Sergio</td>
                                         <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        
+                                        <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
+                                        
                                         <td>
-                                            <span class="badge badge-warning">Project 2</span>
+                                            <span class="badge badge-success">Project 2</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
@@ -726,10 +854,17 @@
                                             </label>
                                         </td>
                                         <td>Tadhg Griogair</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
                                         <td>
-                                            <span class="badge badge-warning">Project 2</span>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                        <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Project 2</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
                                         </td>
                                         <td>
@@ -756,8 +891,15 @@
                                             </label>
                                         </td>
                                         <td>Pollux Beaumont</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                        <td>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
                                             <span class="badge badge-success"><i class="icon-plus"></i></span>
@@ -786,10 +928,17 @@
                                             </label>
                                         </td>
                                         <td>Adam Alister</td>
-                                        <td>email@email.com</td>
-                                        <td>123-456-789</td>
                                         <td>
-                                            <span class="badge badge-success">Active</span>
+                                            <span>email@email.com</span><br>
+                                            <span>123-654-0000</span>
+                                        </td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Project 2</span>
                                         </td>
                                         <td>
                                             <a class="btn btn-warning" href="#">
@@ -816,7 +965,11 @@
                                         </td>
                                         <td>Carlito Roffe</td>
                                         <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
@@ -845,7 +998,9 @@
                                         </td>
                                         <td>Sana Amrin</td>
                                         <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                        </td>
                                         <td>
                                             <span class="badge badge-danger">Banned</span>
                                         </td>
@@ -874,7 +1029,9 @@
                                         </td>
                                         <td>Adinah Ralph</td>
                                         <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                        </td>
                                         <td>
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
@@ -903,7 +1060,12 @@
                                         </td>
                                         <td>Dederick Mihail</td>
                                         <td>email@email.com</td>
-                                        <td>123-456-789</td>
+                                         <td> 
+                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <span class="badge badge-warning">NASCAR</span>
+                                            <span class="badge badge-warning">Biz Dev</span>
+                                            <span class="badge badge-warning">Movies</span>
+                                        </td>
                                         <td>
                                             <span class="badge badge-default">Inactive</span>
                                         </td>
