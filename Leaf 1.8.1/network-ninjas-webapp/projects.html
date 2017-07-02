@@ -63,12 +63,8 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
+            <li class="breadcrumb-item ml-1"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Projects</li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
@@ -163,7 +159,7 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+          <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -229,7 +225,7 @@
                         <strong>View all tasks</strong>
                     </a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
@@ -353,11 +349,11 @@
 
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav mt-2">
                 <ul class="nav">
-                    <li class="nav-title">
+                  <!--  <li class="nav-title">
                         YOUR BUSINESS
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
@@ -457,15 +453,7 @@
 
         <!-- Main content -->
         <main class="main">
-
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Projects</li>
-            </ol>
-
-
-            <div class="container-fluid">
+            <div class="container-fluid mt-2">
                 <div class="animated fadeIn">
                     <div class="animated fadeIn">
                         
@@ -475,8 +463,12 @@
                                 <div class="card">
                                     <div class="card-header accordion">
                                         <a href="create-project.html" style="float: right"><button class="btn btn-outline-danger">Edit</button></a>
-                                        <div class="h4 m-0">Get 15 Associates</div>
-                                        <div>Reach Partner</div>
+                                        <div class="m-0">
+                                        <span>Project: Reach Partner</span>
+                                        </div>
+                                        <div class="h4 m-0">
+                                            <span>Goal: Get 15 Associates</span>
+                                        </div>
 
                                         <div class="progress progress-sm my-1">
                                             <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -516,8 +508,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Status</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -526,7 +517,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">Inactive</span>
                                                                     </td>
@@ -548,7 +539,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-warning">Pending</span>
                                                                     </td>
@@ -570,7 +561,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">Active</span>
                                                                     </td>
@@ -608,8 +599,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                    
                                                                     <th>Follow Up Date</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -618,7 +609,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -640,7 +631,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -662,7 +653,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -684,7 +675,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -706,7 +697,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -744,8 +735,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Date Joined</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -754,7 +744,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -776,7 +766,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -798,7 +788,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -820,7 +810,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -842,7 +832,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -864,7 +854,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -886,7 +876,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -924,8 +914,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                   
                                                                     <th>Date Joined</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -934,7 +924,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -956,7 +946,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -978,7 +968,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                 
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -1000,7 +990,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -1022,7 +1012,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                 
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -1068,8 +1058,8 @@
                                 <div class="card">
                                     <div class="card-header accordion">
                                         <a href="create-project.html" style="float: right"><button class="btn btn-outline-danger">Edit</button></a>
-                                        <div class="h4 m-0">Project Goal</div>
-                                        <div>Project Name</div>
+                                        <div>Project: Blubber</div>
+                                        <div class="h4 m-0">Goal: Get 10 Associates</div>
 
                                         <div class="progress progress-sm my-1">
                                             <div class="progress-bar bg-info" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
@@ -1109,8 +1099,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Status</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -1119,7 +1108,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">Inactive</span>
                                                                     </td>
@@ -1141,7 +1130,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-warning">Pending</span>
                                                                     </td>
@@ -1163,7 +1152,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">Active</span>
                                                                     </td>
@@ -1201,8 +1190,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                   
                                                                     <th>Follow Up Date</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -1211,7 +1200,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -1233,7 +1222,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -1255,7 +1244,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -1277,7 +1266,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -1299,7 +1288,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -1337,8 +1326,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                    
                                                                     <th>Date Joined</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -1347,7 +1336,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -1369,7 +1358,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -1391,7 +1380,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -1413,7 +1402,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -1435,7 +1424,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -1457,7 +1446,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -1479,7 +1468,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
@@ -1517,8 +1506,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                  
                                                                     <th>Date Joined</th>
                                                                     <th>Actions</th>
                                                                 </tr>
@@ -1527,7 +1516,7 @@
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
@@ -1549,7 +1538,7 @@
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
@@ -1571,7 +1560,7 @@
                                                                 <tr>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
@@ -1593,7 +1582,7 @@
                                                                 <tr>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
@@ -1615,7 +1604,7 @@
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>

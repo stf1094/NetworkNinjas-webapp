@@ -63,12 +63,8 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
+            <li class="breadcrumb-item ml-1"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Hotlist</li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
@@ -163,7 +159,7 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+          <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -229,7 +225,7 @@
                         <strong>View all tasks</strong>
                     </a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
@@ -353,11 +349,11 @@
 
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav mt-2">
                 <ul class="nav">
-                    <li class="nav-title">
+                  <!--  <li class="nav-title">
                         YOUR BUSINESS
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
@@ -393,7 +389,7 @@
         </div>
         
         <!--Add group modal-->
-            <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="addTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -515,22 +511,11 @@
 
         <!-- Main content -->
         <main class="main">
-
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Hotlist</li>
-            </ol>
-
-
-            <div class="container-fluid">
-
-
-
+            <div class="container-fluid mt-2">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fa fa-edit"></i> Your Hotlist
+                            <i class="fa fa-fire"></i> Your Hotlist
                             <div class="card-actions">
                                 <a href="http://l-lin.github.io/angular-datatables/#/gettingStarted">
                                     <small class="text-muted">docs</small>
@@ -543,7 +528,7 @@
                                     <tr>
                                         <th>Name</th>
                                         <th>Contact Info</th>
-                                        <th>Groups</th>
+                                        <th>Tags</th>
                                         <th>Projects</th>
                                         <th>Actions</th>
                                     </tr>
@@ -552,11 +537,11 @@
                                     <tr>
                                         <td>Anton Phunihel</td>
                                         <td>
-                                            <span>email@email.com</span><br>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
                                             <span>343-676-9090</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                         </td>
                                         <td>
@@ -581,11 +566,11 @@
                                     <tr>
                                         <td>Alphonse Ivo</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">TIR</span>
                                         </td>
@@ -611,11 +596,11 @@
                                     <tr>
                                         <td>Thancmar Theophanes</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                         </td>
                                         <td>
                                             <span class="badge badge-success">Project 1</span>
@@ -640,11 +625,11 @@
                                     <tr>
                                         <td>Walerian Khwaja</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
                                         <td>
@@ -669,11 +654,11 @@
                                     <tr>
                                         <td>Clemens Janko</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">TIR</span>
                                         </td>
@@ -699,11 +684,11 @@
                                     <tr>
                                         <td>Chidubem Gottlob</td>
                                         <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -729,11 +714,11 @@
                                     <tr>
                                         <td>Hristofor Sergio</td>
                                         <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
                                         <td>
@@ -758,11 +743,11 @@
                                     <tr>
                                         <td>Tadhg Griogair</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">TIR</span>
                                         </td>
@@ -788,11 +773,11 @@
                                     <tr>
                                         <td>Pollux Beaumont</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">TIR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -818,11 +803,11 @@
                                     <tr>
                                         <td>Adam Alister</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">TIR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -848,11 +833,11 @@
                                     <tr>
                                         <td>Carlito Roffe</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -878,11 +863,11 @@
                                     <tr>
                                         <td>Sana Amrin</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -908,11 +893,11 @@
                                     <tr>
                                         <td>Adinah Ralph</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -938,11 +923,11 @@
                                     <tr>
                                         <td>Dederick Mihail</td>
                                          <td>
-                                            <span>email@email.com</span><br>
-                                            <span>555-555-9999</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>

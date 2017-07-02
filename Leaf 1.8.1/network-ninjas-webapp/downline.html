@@ -64,12 +64,8 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
+            <li class="breadcrumb-item ml-1"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Downline</li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
@@ -164,7 +160,7 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+          <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -230,7 +226,7 @@
                         <strong>View all tasks</strong>
                     </a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
@@ -354,11 +350,11 @@
 
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav mt-2">
                 <ul class="nav">
-                    <li class="nav-title">
+                    <!-- <li class="nav-title">
                         YOUR BUSINESS
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
@@ -393,9 +389,9 @@
             </nav>
         </div>
         
-        <!--Downline Activity Reporting Modal-->
+        <!--Downline Reporting Modal-->
         
-           <div class="modal fade" id="downlineFunnel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal fade" id="downlineReporting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -405,30 +401,81 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div class="col-md-12 mb-2">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#projects" role="tab" aria-controls="home"><i class="icon-calculator"></i> Activity</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#reporting" role="tab" aria-controls="profile"><i class="icon-basket-loaded"></i> Reporting</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="projects" role="tab-panel">
-                                        <!--Start Project 1-->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="card">
-                                    <div class="card-header accordion">
-                                        <div class="h4 m-0">Get 15 Associates</div>
-                                        <div>Reach Partner</div>
+                            <div class="row">
+                            <div class="container">
+                             <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Last 7 Days</th>
+                                                <th>Last 14 Days</th>
+                                                <th>Last 30 Days</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>List Growth</b></td>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Exposures</b></td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>New Associates</b></td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>New Customers</b></td>
+                                                <td>2</td>
+                                                <td>4</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                             <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                            </div>
+                            </div>
+                            </div>
+                </div>
+                           
+                <!-- / End Downline Reporting Modal --> 
+        
+        <!--Downline Project Modal-->
+        
+          <div class="modal fade" id="downlineProject" tabindex="-1" role="dialog" aria-labelledby="downlineProject" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ned Ninja - Project Name</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="row">
+                            <div class="container">
+                                      <div class="card">
+                                    <div class="card-header">
+                                        <div>Project: Blubber</div>
+                                        <div class="h4 m-0">Goal: Get 10 Associates</div>
 
                                         <div class="progress progress-sm my-1">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    <div class="card-block accordion-body">
+                                    <div class="card-block">
                                         
                                         <!--Start of tabs-->
                                         
@@ -436,21 +483,21 @@
                             <div class="col-md-12 mb-2">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#waiting" role="tab" aria-controls="waiting">Waiting to hear from you &nbsp;<span class="badge badge-pill badge-default">3</span></a>
+                                        <a class="nav-link active" data-toggle="tab" href="#waiting1" role="tab" aria-controls="waiting">Waiting to hear from you &nbsp;<span class="badge badge-pill badge-default">3</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#followups" role="tab" aria-controls="followups">Follow ups&nbsp;<span class="badge badge-pill badge-warning">15</span></a>
+                                        <a class="nav-link" data-toggle="tab" href="#followups1" role="tab" aria-controls="followups">Follow ups&nbsp;<span class="badge badge-pill badge-warning">15</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#yes" role="tab" aria-controls="yes">Yes&nbsp;<span class="badge badge-pill badge-success">7</span></a>
+                                        <a class="nav-link" data-toggle="tab" href="#yes1" role="tab" aria-controls="yes">Yes&nbsp;<span class="badge badge-pill badge-success">7</span></a>
                                     </li>
                                      <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#no" role="tab" aria-controls="no">No&nbsp;<span class="badge badge-pill badge-danger">5</span></a>
+                                        <a class="nav-link" data-toggle="tab" href="#no1" role="tab" aria-controls="no">No&nbsp;<span class="badge badge-pill badge-danger">5</span></a>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="waiting" role="tabpanel">
+                                    <div class="tab-pane active" id="waiting1" role="tabpanel">
                                        <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="card">
@@ -462,33 +509,47 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
-                                                                    <th>Exposures</th>
+                                                                    <th>Contact Info</th>
+                                                                    <th>Status</th>
                                                                     
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Einar Randall</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Admin</td>
-                                                                    <td>4</td>
-                                                           
+                                                                    <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        <span class="badge badge-default">Inactive</span>
+                                                                    </td>
+                                                             
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Félix Troels</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Member</td>
-                                                                    <td>4</td>
-                                                                
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        <span class="badge badge-warning">Pending</span>
+                                                                    </td>
+                                                              
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Staff</td>
-                                                                    <td>4</td>
-                                                                
+                                                                    <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-success">Active</span>
+                                                                    </td>
+                                                               
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -497,7 +558,7 @@
                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="followups" role="tabpanel">
+                                    <div class="tab-pane" id="followups1" role="tabpanel">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="card">
@@ -509,56 +570,72 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                   
                                                                     <th>Follow Up Date</th>
-                                                                    <th>Exposures</th>
+                                                                 
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                    <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                           
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
-                                                                    <td>4</td>
+                                                                    </td>
+                                                              
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Einar Randall</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Admin</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                     <td>4</td>
+                                                           
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Félix Troels</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Member</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                          
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>Staff</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                           
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -567,7 +644,7 @@
                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="yes" role="tabpanel">
+                                    <div class="tab-pane" id="yes1" role="tabpanel">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="card">
@@ -579,75 +656,90 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th> 
                                                                     <th>Date Joined</th>
-                                                                    <th>Exposures</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
-                                                                    <td>4</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
-                                                                     <td>4</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Einar Randall</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                           
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Félix Troels</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                            
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                                   <td>
+                                                         
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                             
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                    <td>4</td>
+                                                          
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -656,7 +748,7 @@
                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="no" role="tabpanel">
+                                    <div class="tab-pane" id="no1" role="tabpanel">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="card">
@@ -668,41 +760,62 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Exposures</th>
+                                                                   
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>4</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
+                                                                    <td>2
+                                                                    </td>
+                                                         
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Zbyněk Phoibos</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>4</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    <td>2
+                                                                    </td>
+                                                        
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Einar Randall</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>4</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  <td>2
+                                                                    </td>
+                                                          
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Félix Troels</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>4</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                     <td>2
+                                                                    </td>
+                                                          
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>4</td>
+                                                                     <td>
+                                                                         <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                         <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    <td>2
+                                                                    </td>
+                                                          
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -721,77 +834,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--End project 1-->
-                        
-                                    </div>
-                                    
-                                    <!--Start Reporting Tab-->
-                                    <div class="tab-pane" id="reporting" role="tabpanel">
-                                                 <table class="table table-striped">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th></th>
-                                                                                    <th>Last 7 Days</th>
-                                                                                    <th>Last 14 Days</th>
-                                                                                    <th>Last 30 Days</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><b>List Growth</b></td>
-                                                                                    <td>1</td>
-                                                                                    <td>5</td>
-                                                                                    <td>7</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><b>Exposures</b></td>
-                                                                                    <td>1</td>
-                                                                                    <td>2</td>
-                                                                                    <td>3</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><b>New Associates</b></td>
-                                                                                    <td>1</td>
-                                                                                    <td>2</td>
-                                                                                    <td>3</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><b>New Customers</b></td>
-                                                                                    <td>2</td>
-                                                                                    <td>4</td>
-                                                                                    <td>10</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                    </div>
-                                 
-                                </div>
                             </div>
                             </div>
-                            <div class="modal-footer">
+                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
                             </div>
                         </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
                 </div>
-                <!-- / End Downline Activity Modal --> 
-
+          </div>
+           
+                                
+                       
         <!-- Main content -->
         <main class="main">
-
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Downline</li>
-            </ol>
-
-
-            <div class="container-fluid">
+            <div class="container-fluid mt-2">
                 <div class="animated fadeIn">
-                    <div class="animated fadeIn">
                        
                         <!--<div class="row">
                             <div class="col-md-12">
@@ -1008,18 +1065,22 @@
                                                            <a class="btn btn-block btn-outline-success">See Project Status</a> 
                                                         </div>         
                                                         <div class="accordion-body">
-                                                            <span>Ned Ninja's Project</span>
-                                                             <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
-                                                             </div>
-                                                            <span>Ned Project 2</span>
-                                                            <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-warning" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <span>Ned Project 3</span>
-                                                            <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-warning" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                              <a data-toggle="modal" href="#downlineProject">
+                                                                <div>
+                                                                    <span>Ned Ninja's Project</span>
+                                                                     <div class="progress progress-sm my-h">
+                                                                        <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                     </div>
+                                                                </div>
+                                                            </a>
+                                                               <a data-toggle="modal" href="#downlineProject">
+                                                                <div>
+                                                                    <span>Ned Ninja's Project</span>
+                                                                     <div class="progress progress-sm my-h">
+                                                                        <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                     </div>
+                                                                </div>
+                                                            </a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1033,30 +1094,36 @@
                                                       <a class="btn btn-success" href="new-message.html">
                                                           <i class="fa fa-edit "></i>
                                                       </a>
-                                                      <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                      <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                           <i class="fa fa-bar-chart"></i>
                                                       </a>
                                                  </td>
                                                 </tr>
                                                 <tr class="treegrid-2 treegrid-parent-1">
                                                     <td>Greg Ninja</td>
-                                                    <td>
-                                                        <div class="accordion-downline">See Project Status</div>         
-                                                        <div class="accordion-body">
-                                                            <span>Greg Ninja's Project</span>
-                                                             <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-primary" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
-                                                             </div>
-                                                            <span>Greg Project 2</span>
-                                                            <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-warning" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                                                     <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                            <span>Greg Project 3</span>
-                                                            <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-warning" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                        </td>
                                                         <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1068,18 +1135,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td> 
                                                 </tr>
                                                 <tr class="treegrid-3 treegrid-parent-1">
                                                     <td>Ed Ninja</td>
-                                                    <td>Ed Ninja's Goal
-                                                     <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                          <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1091,18 +1176,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-4 treegrid-parent-3">
                                                     <td>Bob Proctor</td>
-                                                    <td>Bob Proctor's Goal
-                                                    <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-danger" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                         <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1114,18 +1217,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-5 treegrid-parent-3">
                                                     <td>Bob Doctor</td>
-                                                    <td>Bob Doctor's Goal
-                                                    <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-danger" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                         <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1137,18 +1258,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-9 treegrid-parent-5">
                                                     <td>Joe Schmoe III</td>
-                                                    <td>Joe Schmoe III's Goal
-                                                    <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-success" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                         <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1160,17 +1299,35 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-6">
                                                     <td>Jim Johnson</td>
-                                                    <td>Jim Johnson's Goal
-                                                    <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-primary" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                   <td>
+                                                        <div class="accordion-downline">
+                                                           <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                        </div>         
+                                                        <div class="accordion-body">
+                                                            <a data-toggle="modal" href="#downlineProject">
+                                                                <div>
+                                                                    <span>Ned Ninja's Project</span>
+                                                                     <div class="progress progress-sm my-h">
+                                                                        <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                     </div>
+                                                                </div>
+                                                            </a>
+                                                            <a data-toggle="modal" href="#downlineProject">
+                                                                <div>
+                                                                    <span>Ned Ninja's Project</span>
+                                                                     <div class="progress progress-sm my-h">
+                                                                        <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                     </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
                                                     </td>
                                                      <td>
                                                             <a class="btn btn-warning" href="profile.html">
@@ -1183,18 +1340,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-7 treegrid-parent-6">
                                                     <td>John Johnson</td>
-                                                    <td>John Johnson's Goal
-                                                     <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                      <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1206,18 +1381,36 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
                                                 </tr>
                                                 <tr class="treegrid-8 treegrid-parent-6">
                                                     <td>Pam Johnson</td>
-                                                    <td>Pam Johnson's Goal
-                                                    <div class="progress progress-sm my-h">
-                                                                <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <td>
+                                                            <div class="accordion-downline">
+                                                               <a class="btn btn-block btn-outline-success">See Project Status</a> 
+                                                            </div>         
+                                                            <div class="accordion-body">
+                                                                <a data-toggle="modal" href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
+                                                                <a data-toggle="modal"href="#downlineProject">
+                                                                    <div>
+                                                                        <span>Ned Ninja's Project</span>
+                                                                         <div class="progress progress-sm my-h">
+                                                                            <div class="progress-bar bg-primary" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                         </div>
+                                                                    </div>
+                                                                </a>
                                                             </div>
-                                                    </td>
+                                                        </td>
                                                      <td>
                                                             <a class="btn btn-warning" href="profile.html">
                                                                 <i class="fa fa-search-plus"></i>
@@ -1229,7 +1422,7 @@
                                                             <a class="btn btn-success" href="new-message.html">
                                                                 <i class="fa fa-edit "></i>
                                                             </a>
-                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineFunnel">
+                                                            <a class="btn btn-info" data-toggle="modal" href="#downlineReporting">
                                                                 <i class="fa fa-bar-chart"></i>
                                                             </a>
                                                          </td>
@@ -1245,7 +1438,7 @@
                
                         </div>
                     </div>
-                </div>
+        
 
 
         

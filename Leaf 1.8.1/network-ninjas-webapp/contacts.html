@@ -63,13 +63,8 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-
-            <li class="nav-item px-1">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
+            <li class="breadcrumb-item ml-1"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Contacts</li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
            <li class="nav-item dropdown hidden-md-down">
@@ -164,7 +159,7 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+         <!--   <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -230,7 +225,7 @@
                         <strong>View all tasks</strong>
                     </a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
@@ -354,11 +349,11 @@
 
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav mt-2">
                 <ul class="nav">
-                    <li class="nav-title">
+                  <!--  <li class="nav-title">
                         YOUR BUSINESS
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
@@ -445,11 +440,11 @@
                 </div>
                 <!-- /.modal -->
         
-         <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal fade" id="addTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Group Manager - "Name"</h4>
+                                <h4 class="modal-title"> Tags - "Name"</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -459,7 +454,7 @@
                             <div class="card">
                                 <div class="card-block">
                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label">Group</label>
+                                            <label class="col-md-3 form-control-label">Tag</label>
                                             <div class="col-md-9">
                                                 <div class="checkbox">
                                                     <label for="checkbox1">
@@ -474,7 +469,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 form-control-label">Add new group</label>
+                                            <label class="col-md-3 form-control-label">Add new tag</label>
                                             <div class="col-md-9">
                                                 <fieldset class="form-group">
                                                     <div class="input-group">
@@ -486,13 +481,13 @@
                                             </div>
                                         </div>
                                          <div class="form-group row">
-                                            <label class="col-md-3 form-control-label" for="select">Choose existing group</label>
+                                            <label class="col-md-3 form-control-label" for="select">Choose existing tag</label>
                                             <div class="col-md-9">
                                                 <select id="select" name="select" class="form-control" size="1">
                                                     <option value="0">Please select</option>
-                                                    <option value="1">Group #1</option>
-                                                    <option value="2">Group #2</option>
-                                                    <option value="3">Group #3</option>
+                                                    <option value="1">Tag #1</option>
+                                                    <option value="2">Tag #2</option>
+                                                    <option value="3">Tag #3</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -513,18 +508,7 @@
         
         <!-- Main content -->
         <main class="main">
-
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contacts</li>
-            </ol>
-
-
-            <div class="container-fluid">
-
-
-
+            <div class="container-fluid mt-2">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
@@ -575,7 +559,7 @@
                                         <th>Select</th>
                                         <th>Name</th>
                                         <th>Contact Info</th>
-                                        <th>Groups</th>
+                                        <th>Tags</th>
                                         <th>Projects</th>
                                         <th>Actions</th>
                                     </tr>
@@ -591,14 +575,14 @@
                                         </td>
                                         <td>Christian Medaglia</td>
                                         <td>
-                                            <span>email@email.com</span><br>
-                                            <span>email2@email.com</span> <br>
-                                            <span>123-333-3333 </span> <br> 
-                                            <span>555-555-5555</span> <br>
-                                            <span>508-867-5309</span>
+                                            <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                            <span><i class="fa fa-envelope"></i> email2@email.com</span> <br>
+                                            <span><i class="fa fa-home"></i> 123-333-3333 </span> <br> 
+                                            <span><i class="fa fa-mobile"></i> 555-555-5555</span> <br>
+                                            <span><i class="fa fa-phone"></i> 508-867-5309</span>
                                         </td>
                                         <td>
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Movies</span>
                                         </td>
@@ -634,7 +618,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td>
-                                          <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                          <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
                                         </td>
@@ -671,7 +655,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td>
-                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                         <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
@@ -710,7 +694,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td>
-                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                         <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -747,7 +731,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
                                         </td>
@@ -784,7 +768,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td>
-                                         <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                         <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
@@ -820,7 +804,7 @@
                                         <td>email@email.com</td>
                                         
                                         <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
@@ -859,7 +843,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                         <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -896,7 +880,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
                                         </td>
@@ -933,7 +917,7 @@
                                             <span>123-654-0000</span>
                                         </td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                         </td>
@@ -966,7 +950,7 @@
                                         <td>Carlito Roffe</td>
                                         <td>email@email.com</td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Movies</span>
                                         </td>
@@ -999,7 +983,7 @@
                                         <td>Sana Amrin</td>
                                         <td>email@email.com</td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                         </td>
                                         <td>
                                             <span class="badge badge-danger">Banned</span>
@@ -1030,7 +1014,7 @@
                                         <td>Adinah Ralph</td>
                                         <td>email@email.com</td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                         </td>
                                         <td>
                                             <span class="badge badge-default">Inactive</span>
@@ -1061,7 +1045,7 @@
                                         <td>Dederick Mihail</td>
                                         <td>email@email.com</td>
                                          <td> 
-                                            <a href="#addGroup" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
+                                            <a href="#addTag" data-toggle="modal"><span class="badge badge-warning"><i class="icon-plus"></i></span></a>
                                             <span class="badge badge-warning">NASCAR</span>
                                             <span class="badge badge-warning">Biz Dev</span>
                                             <span class="badge badge-warning">Movies</span>
