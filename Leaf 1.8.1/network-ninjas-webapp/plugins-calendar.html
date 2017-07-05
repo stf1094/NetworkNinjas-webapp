@@ -63,12 +63,8 @@
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
             </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
+           <li class="breadcrumb-item ml-1"><a href="index.html">Home</a></li>
+           <li class="breadcrumb-item active">Calendar</li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
@@ -88,7 +84,7 @@
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
                       <a href="new-category.html" class="dropdown-item">
-                        <i class="icon-people text-info"></i> Create new group
+                        <i class="icon-tag text-info"></i> Create new tag
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -98,7 +94,7 @@
                     </a>
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+         <!--   <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-bell"></i>
                     <span class="badge badge-pill badge-danger">5</span>
@@ -161,8 +157,8 @@
                     </a>
 
                 </div>
-            </li>
-            <li class="nav-item dropdown hidden-md-down">
+            </li> -->
+          <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
@@ -228,7 +224,7 @@
                         <strong>View all tasks</strong>
                     </a>
                 </div>
-            </li>
+            </li> -->
             <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
@@ -311,9 +307,9 @@
                     </a>
                 </div>
             </li>
-            <li class="nav-item hidden-md-down">
+          <!--  <li class="nav-item hidden-md-down">
                 <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
@@ -321,14 +317,14 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
 
-                    <div class="dropdown-header text-center">
+                   <!-- <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
 
                     <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a> -->
 
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
@@ -352,15 +348,11 @@
 
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav mt-2">
                 <ul class="nav">
-                    <li class="nav-title">
-                        YOUR BUSINESS
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                     </li>
-
                     <li class="divider"></li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html"><i class="fa fa-group"></i> Contacts</a>
@@ -393,17 +385,7 @@
 
         <!-- Main content -->
         <main class="main">
-
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Calendar</li>
-            </ol>
-
-
-            <div class="container-fluid">
-
-
+            <div class="container-fluid mt-2">
                 <div class="animated fadeIn">
                     <div class="card">
                         <div class="card-header">
@@ -432,9 +414,9 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
                 </li>
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
-                </li>
+                </li> -->
             </ul>
 
             <!-- Tab panes -->
@@ -612,7 +594,7 @@
                         <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                     </div>
                 </div>
-                <div class="tab-pane p-1" id="settings" role="tabpanel">
+               <!-- <div class="tab-pane p-1" id="settings" role="tabpanel">
                     <h6>Settings</h6>
 
                     <div class="aside-options">
@@ -707,7 +689,7 @@
                         <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small class="text-muted">25GB/256GB</small>
-                </div>
+                </div> -->
             </div>
         </aside>
 

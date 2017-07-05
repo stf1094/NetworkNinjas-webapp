@@ -87,7 +87,7 @@
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
                      <a href="new-category.html" class="dropdown-item">
-                        <i class="icon-people text-info"></i> Create new group
+                        <i class="icon-tag text-info"></i> Create new tag
                     </a>
                     <a href="create-project.html" class="dropdown-item">
                         <i class="icon-star text-info"></i> Create new project
@@ -97,7 +97,7 @@
                     </a>
                 </div>
             </li>
-            <li class="nav-item dropdown hidden-md-down">
+          <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-bell"></i>
                     <span class="badge badge-pill badge-danger">5</span>
@@ -160,7 +160,7 @@
                     </a>
 
                 </div>
-            </li>
+            </li> -->
           <!--  <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="icon-list"></i>
@@ -310,9 +310,9 @@
                     </a>
                 </div>
             </li>
-            <li class="nav-item hidden-md-down">
+           <!-- <li class="nav-item hidden-md-down">
                 <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
@@ -320,14 +320,14 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
 
-                    <div class="dropdown-header text-center">
+                 <!--   <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
 
                     <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
                     <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a> -->
 
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
@@ -457,6 +457,7 @@
                 </div>
                 <!-- /.modal -->
         
+        <!--Project Outcome Modal-->
            <div class="modal fade" id="followUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -584,8 +585,8 @@
                              <a href="#inviteDownline">
                              <div class="card">
                                  <div class="card-block p-1 clearfix">
-                                    <i class="icon-people bg-warning font-2xl mr-1 p-1 float-left"></i>
-                                    <div class="h5 text-primary mt-1 mb-0">Create Group</div>
+                                    <i class="icon-tag bg-warning font-2xl mr-1 p-1 float-left"></i>
+                                    <div class="h5 text-primary mt-1 mb-0">Create Tag</div>
                                 </div>
                             </div>
                             </a>
@@ -628,18 +629,29 @@
                     
                     <!--Start Project Cards-->
                     
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <h4 class="card-title">Reach Partner</h4>
-                                            <div class="small text-muted" style="margin-top:-10px;">Your Deadline Date</div>
+                           <!--Start Project 1-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header accordion">
+                                        <a href="create-project.html" style="float: right"><button class="btn btn-outline-danger">Edit</button></a>
+                                        <div class="m-0">
+                                        <span>Project: Reach Partner</span>
+                                        </div>
+                                        <div class="h4 m-0">
+                                            <span>Goal: Get 15 Associates</span>
+                                        </div>
+
+                                        <div class="progress progress-sm my-1">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    
-                                <div class="col-md-12 mb-2 mt-2">
+                                    <div class="card-block accordion-body">
+                                        
+                                        <!--Start of tabs-->
+                                        
+                            <div class="row">
+                            <div class="col-md-12 mb-2">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" data-toggle="tab" href="#waiting" role="tab" aria-controls="waiting">Waiting to hear from you &nbsp;<span class="badge badge-pill badge-default">3</span></a>
@@ -667,37 +679,26 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Select</th>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
-                                                                    <th>Project</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Actions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Einar Randall</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
-                                                                    <td>
-                                                                        <span class="badge badge-default">Reach Partner</span>
-                                                                    </td>
                                                                      <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                    
+                                                                    <td>
                                                                         <a class="btn btn-warning" href="profile.html">
-                                                                            <i class="fa fa-search-plus"></i>
+                                                                            <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        
                                                                         <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
@@ -705,26 +706,19 @@
                                                                             <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
-                                                                </tr> 
+                                                                </tr>
                                                                 <tr>
-                                                                        <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Félix Troels</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
                                                                     <td>
-                                                                        <span class="badge badge-warning">Pending</span>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                                                     </td>
+                                                                  
                                                                      <td>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                        <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
                                                                         <a class="btn btn-success" href="new-message.html">
@@ -736,27 +730,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
                                                                     <td>
-                                                                        <span class="badge badge-success">Active</span>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                                                     </td>
+                                                                    
                                                                      <td>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-success" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -782,37 +769,32 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Select</th>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
+                                                                    
                                                                     <th>Follow Up Date</th>
                                                                     <th>Actions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
                                                                      <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -821,27 +803,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Zbyněk Phoibos</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
                                                                      <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -850,27 +825,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -879,27 +847,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="UIkits-email-compose.html">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -908,27 +869,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>123-456-789</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -954,66 +908,56 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Select</th>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Date Joined</th>
                                                                     <th>Actions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">6/1/17</span>
                                                                     </td>
                                                                      <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
-                                                                            <i class="icon-info"></i>
+                                                                            <i class="icon-plus"></i>
                                                                         </a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Zbyněk Phoibos</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                       <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-danger">Today</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1022,27 +966,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-default">6/2/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1051,27 +988,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-warning">6/3/17</span>
                                                                     </td>
                                                                      <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1080,27 +1010,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1109,27 +1032,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                    
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1138,27 +1054,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
+                                                                  
                                                                     <td>
                                                                         <span class="badge badge-success">5/29/17</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1184,37 +1093,27 @@
                                                         <table class="table table-bordered table-striped table-condensed">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Select</th>
                                                                     <th>Name</th>
-                                                                    <th>Email</th>
-                                                                    <th>Phone Number</th>
-                                                                    <th>Date Joined</th>
+                                                                    <th>Contact Info</th>
                                                                     <th>Actions</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Vishnu Serghei</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>
-                                                                        <span class="badge badge-success">6/1/17</span>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                   
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1223,27 +1122,20 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Zbyněk Phoibos</td>
-                                                                    <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>
-                                                                        <span class="badge badge-danger">Today</span>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
                                                                     </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                  
+                                                                 <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1252,27 +1144,17 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Einar Randall</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>
-                                                                        <span class="badge badge-default">6/2/17</span>
-                                                                    </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                 
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1281,27 +1163,17 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Félix Troels</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>
-                                                                        <span class="badge badge-warning">6/3/17</span>
-                                                                    </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                 
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1310,27 +1182,17 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> 
-                                                                        <label class="switch switch-icon switch-pill switch-primary">
-                                                                            <input type="checkbox" class="switch-input" checked="">
-                                                                            <span class="switch-label" data-on="" data-off=""></span>
-                                                                        <span class="switch-handle"></span>
-                                                                        </label>
-                                                                    </td>
                                                                     <td>Aulus Agmundr</td>
                                                                     <td>email@email.com</td>
-                                                                    <td>567-456-345</td>
-                                                                    <td>
-                                                                        <span class="badge badge-success">5/29/17</span>
-                                                                    </td>
-                                                                     <td>
-                                                                        <a class="btn btn-success" href="#">
+                                                                 
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
                                                                             <i class="fa fa-search-plus "></i>
                                                                         </a>
-                                                                           <a class="btn btn-info" href="#">
+                                                                         <a class="btn btn-info" href="#">
                                                                             <i class="icon-camrecorder"></i>
                                                                         </a>
-                                                                        <a class="btn btn-warning" href="#">
+                                                                        <a class="btn btn-success" href="new-message.html">
                                                                             <i class="fa fa-edit "></i>
                                                                         </a>
                                                                         <a class="btn btn-info" href="#">
@@ -1347,23 +1209,599 @@
                                     </div>
                                 </div>
                             </div>
-                                    
-                                    
-               
-                                    
-                                    <!--<div class="chart-wrapper" style="height:298px;margin-top:40px;">
-                                        <canvas id="main-chart" height="298"></canvas>
-                                    </div>-->
-                                    
-                                    
-                                </div>
-                     
-                            </div>
-                            <!--/.card-->
+ 
+                            <!--/.col-->
+                            
                         </div>
-                        <!--/.col-->
-                        <!--/.col-->
-                    </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End project 1-->
+                        
+                        <!--Start Project 2-->
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header accordion">
+                                        <a href="create-project.html" style="float: right"><button class="btn btn-outline-danger">Edit</button></a>
+                                        <div>Project: Blubber</div>
+                                        <div class="h4 m-0">Goal: Get 10 Associates</div>
+
+                                        <div class="progress progress-sm my-1">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-block accordion-body">
+                                        
+                                        <!--Start of tabs-->
+                                        
+                            <div class="row">
+                            <div class="col-md-12 mb-2">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#waiting1" role="tab" aria-controls="waiting">Waiting to hear from you &nbsp;<span class="badge badge-pill badge-default">3</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#followups1" role="tab" aria-controls="followups">Follow ups&nbsp;<span class="badge badge-pill badge-warning">15</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#yes1" role="tab" aria-controls="yes">Yes&nbsp;<span class="badge badge-pill badge-success">7</span></a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#no1" role="tab" aria-controls="no">No&nbsp;<span class="badge badge-pill badge-danger">5</span></a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="waiting1" role="tabpanel">
+                                       <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <i class="fa fa-align-justify"></i> Waiting to hear from you
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <table class="table table-bordered table-striped table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Contact Info</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Einar Randall</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" data-toggle="modal" href="#followUp">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Félix Troels</td>
+                                                                       <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                  
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="followups1" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <i class="fa fa-align-justify"></i> Follow Ups
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <table class="table table-bordered table-striped table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Contact Info</th>
+                                                                   
+                                                                    <th>Follow Up Date</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Vishnu Serghei</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
+                                                                    <td>
+                                                                        <span class="badge badge-success">6/1/17</span>
+                                                                    </td>
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Zbyněk Phoibos</td>
+                                                                       <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                  
+                                                                    <td>
+                                                                        <span class="badge badge-danger">Today</span>
+                                                                    </td>
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Einar Randall</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-default">6/2/17</span>
+                                                                    </td>
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Félix Troels</td>
+                                                                    <td>email@email.com</td>
+                                                                  
+                                                                    <td>
+                                                                        <span class="badge badge-warning">6/3/17</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                
+                                                                    <td>
+                                                                        <span class="badge badge-success">5/29/17</span>
+                                                                    </td>
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="yes1" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <i class="fa fa-align-justify"></i> Yes
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <table class="table table-bordered table-striped table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Contact Info</th> 
+                                                                    <th>Date Joined</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Vishnu Serghei</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        <span class="badge badge-success">6/1/17</span>
+                                                                    </td>
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Zbyněk Phoibos</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-danger">Today</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Einar Randall</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-default">6/2/17</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Félix Troels</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-warning">6/3/17</span>
+                                                                    </td>
+                                                                     <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-success">5/29/17</span>
+                                                                    </td>
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-success">5/29/17</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                   
+                                                                    <td>
+                                                                        <span class="badge badge-success">5/29/17</span>
+                                                                    </td>
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="no1" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <i class="fa fa-align-justify"></i> Prospects Who Said No
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <table class="table table-bordered table-striped table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Contact Info</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Vishnu Serghei</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Zbyněk Phoibos</td>
+                                                                        <td>
+                                                                        <span><i class="fa fa-envelope"></i> email@email.com</span><br>
+                                                                        <span><i class="fa fa-mobile"></i> 555-555-9999</span>
+                                                                    </td>
+                                                                     <td>
+                                                                            <a class="btn btn-warning" href="profile.html">
+                                                                                <i class="fa fa-search-plus "></i>
+                                                                            </a>
+                                                                             <a class="btn btn-info" href="#">
+                                                                                <i class="icon-camrecorder"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-success" href="new-message.html">
+                                                                                <i class="fa fa-edit "></i>
+                                                                            </a>
+                                                                            <a class="btn btn-info" href="#">
+                                                                                <i class="icon-plus"></i>
+                                                                            </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Einar Randall</td>
+                                                                    <td>email@email.com</td>
+                                                                   <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Félix Troels</td>
+                                                                    <td>email@email.com</td>
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aulus Agmundr</td>
+                                                                    <td>email@email.com</td>
+                                                                  <td>
+                                                                        <a class="btn btn-warning" href="profile.html">
+                                                                            <i class="fa fa-search-plus "></i>
+                                                                        </a>
+                                                                         <a class="btn btn-info" href="#">
+                                                                            <i class="icon-camrecorder"></i>
+                                                                        </a>
+                                                                        <a class="btn btn-success" href="new-message.html">
+                                                                            <i class="fa fa-edit "></i>
+                                                                        </a>
+                                                                        <a class="btn btn-info" href="#">
+                                                                            <i class="icon-plus"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <!--/.col-->
+                            
+                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end project 2-->
                     <!--/.row-->
 
                     <!--/.row-->
@@ -1382,9 +1820,9 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
                 </li>
-                <li class="nav-item">
+              <!--  <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
-                </li>
+                </li> -->
             </ul>
 
             <!-- Tab panes -->
@@ -1562,7 +2000,7 @@
                         <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                     </div>
                 </div>
-                <div class="tab-pane p-1" id="settings" role="tabpanel">
+             <!--   <div class="tab-pane p-1" id="settings" role="tabpanel">
                     <h6>Settings</h6>
 
                     <div class="aside-options">
@@ -1657,7 +2095,7 @@
                         <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small class="text-muted">25GB/256GB</small>
-                </div>
+                </div> -->
             </div>
         </aside>
 
