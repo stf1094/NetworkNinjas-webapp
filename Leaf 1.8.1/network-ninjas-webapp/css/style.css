@@ -14019,3 +14019,15 @@ base-chart.chart {
     display: none;
     background-color: white;
 }
+
+.enhanced-status {
+    background-image: url("../img/enhanced-symbol.png");
+}
+
+.pro-status {
+    background-image: url("../img/pro-symbol.png");
+}
+
+.enterprise-status {
+    background-image: url("../img/enterprise-symbol.png");
+}

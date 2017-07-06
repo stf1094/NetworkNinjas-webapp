@@ -62,7 +62,7 @@
 <body class="app header-fixed aside-menu-fixed aside-menu-hidden">
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">☰</button>
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="index.html"></a>
         <ul class="nav navbar-nav hidden-md-down">
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
@@ -72,7 +72,7 @@
         <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown hidden-md-down">
                 <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-plus-square-o"></i>
+                    <i class="fa fa-plus-square-o"></i> Quick Actions
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
 
@@ -86,7 +86,7 @@
                     <a href="#addContact" data-toggle="modal" class="dropdown-item">
                         <i class="icon-user-follow text-danger"></i> Create new contact
                     </a>
-                     <a href="new-category.html" class="dropdown-item">
+                     <a href="new-tag.html" class="dropdown-item">
                         <i class="icon-tag text-info"></i> Create new tag
                     </a>
                     <a href="create-project.html" class="dropdown-item">
@@ -333,10 +333,9 @@
                         <strong>Settings</strong>
                     </div>
 
-                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-default">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+                    <a class="dropdown-item" href="account-profile.html"><i class="fa fa-user"></i> Profile</a>
+                    <a class="dropdown-item" href="settings.html"><i class="fa fa-wrench"></i> Settings</a>
+                    <a class="dropdown-item" href="payments.html"><i class="fa fa-usd"></i> Payments</a>
                     <div class="divider"></div>
                     <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
@@ -393,8 +392,8 @@
         
  <!--Modals-->
         
-       <div class="modal fade" id="addContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+             <div class="modal fade" id="addContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Add Contact</h4>
@@ -408,38 +407,60 @@
                             <div class="card">
                               
                                 <div class="card-block">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="phoneNumber">Phone Number</label>
-                                        <input type="text" class="form-control" id="phoneNumber" placeholder="555-555-5555">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="Enter email">
-                                    </div>
-                                        <div class="form-group row">
-                                            <label class="col-md-3 form-control-label">Add to Project</label>
-                                            <div class="col-md-9">
-                                                <div class="checkbox">
-                                                    <label for="checkbox1">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">Option 1
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox2">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">Option 2
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label for="checkbox3">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">Option 3
-                                                    </label>
-                                                </div>
+                                   <div class="row">
+                                        <div class="col-sm-6">
+                                          <div class="form-group">
+                                                <label for="name">First Name</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter first name">
                                             </div>
+                                       </div>
+                                        <div class="col-sm-6">
+                                        <div class="form-group">
+                                                <label for="name">Last Name</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter last name">
+                                            </div>
+                                       </div>
+                                    </div>
+                                       <div class="row">
+                                        <div class="col-sm-6">
+                                             <div class="form-group">
+                                                <label for="phoneNumber">Phone Number</label>
+                                                <input type="text" class="form-control" id="phoneNumber" placeholder="555-555-5555">
+                                            </div>
+                                       </div>
+                                        <div class="col-sm-6">
+                                              <div class="form-group">
+                                                  <label for="email">Email</label>
+                                                <input type="text" class="form-control" id="email" placeholder="Enter email">
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <fieldset class="form-group">
+                                                <label>Add to Project</label>
+                                                <select id="select2-2" class="form-control select2-multiple" multiple="">
+                                                    <option>Option 1</option>
+                                                    <option selected="">Option 2</option>
+                                                    <option>Option 3</option>
+                                                    <option>Option 4</option>
+                                                    <option>Option 5</option>
+                                                 </select>
+                                                </fieldset>
+                                        </div>
+                                            <div class="col-sm-6">
+                                                <fieldset class="form-group">
+                                                <label>Add Tags</label>
+                                                <select id="select2-2" class="form-control select2-multiple" multiple="">
+                                                    <option>Option 1</option>
+                                                    <option selected="">Option 2</option>
+                                                    <option>Option 3</option>
+                                                    <option>Option 4</option>
+                                                    <option>Option 5</option>
+                                                 </select>
+                                                </fieldset>
+                                        </div>
                                         </div>
                                 </div>
                             </div>
@@ -572,7 +593,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <a href="#inviteDownline">
+                            <a data-toggle="modal" href="#addContact">
                              <div class="card">
                                  <div class="card-block p-1 clearfix">
                                     <i class="icon-user-follow bg-danger font-2xl mr-1 p-1 float-left"></i>
@@ -582,7 +603,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                             <a href="#inviteDownline">
+                             <a href="new-tag.html">
                              <div class="card">
                                  <div class="card-block p-1 clearfix">
                                     <i class="icon-tag bg-warning font-2xl mr-1 p-1 float-left"></i>
@@ -594,7 +615,7 @@
                     
                     
                         <div class="col-md-4 col-sm-6">
-                            <a href="create-project.html">
+                            <a href="new-message.html">
                             <div class="card">
                                 <div class="card-block p-1 clearfix">
                                     <i class="fa fa-edit  bg-success font-2xl mr-1 p-1 float-left"></i>
@@ -604,7 +625,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <a href="#inviteDownline">
+                            <a href="#zoomInvite">
                              <div class="card">
                                  <div class="card-block p-1 clearfix">
                                     <i class="icon-camrecorder bg-info font-2xl mr-1 p-1 float-left"></i>
@@ -614,7 +635,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                             <a href="#inviteDownline">
+                             <a href="#inviteOthers">
                              <div class="card">
                                  <div class="card-block p-1 clearfix">
                                     <i class="fa fa-paper-plane bg-success font-2xl mr-1 p-1 float-left"></i>
@@ -624,7 +645,6 @@
                             </a>
                         </div>
                     </div>
-                    
                     <!--End Action Buttons-->
                     
                     <!--Start Project Cards-->
@@ -2123,10 +2143,10 @@
 
     <script src="js/app.js"></script>
 
-    <!--SLick Slider-->
+    <!--SLick Slider
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/libs/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/slick.js" type="text/javascript" charset="utf-8"></script> -->
 
 
     <!-- Plugins and scripts required by this views -->
@@ -2134,10 +2154,15 @@
     <script src="js/libs/gauge.min.js"></script>
     <script src="js/libs/moment.min.js"></script>
     <script src="js/libs/daterangepicker.js"></script>
-
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/select2.min.js"></script>
+    <script src="js/libs/fullcalendar.min.js"></script>
+    <script src="js/libs/gcal.js"></script>
 
     <!-- Custom scripts required by this view -->
     <script src="js/views/main.js"></script>
+    <script src="js/views/advanced-forms.js"></script>
+    <script src="js/views/widgets.js"></script>
 
 </body>
 
